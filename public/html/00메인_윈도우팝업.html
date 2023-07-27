@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/img/mp/logo/logo.png" />
+	<title>디지털서비스 개방 팝업</title>
+</head>
+<body>
+	<body style="box-sizing: border-box; border: 0; margin: 0; padding: 0;">
+    <script src="/popup/js/setCookie.js"></script>
+
+    <img id="popupImage" src="" alt="테스트용 이미지" />
+    <input type="hidden" value="" id="urlVlu" />
+
+    <script>
+        const urlParams = new URL(location.href).searchParams;
+        const url = urlParams.get('url');
+        document.getElementById('popupImage').src = url;
+    </script>
+
+		<div style="display: flex; align-items: center; justify-content: space-between; background-color: #ffffff;">
+			<a href="javascript:closePopup()" style="display: flex; align-items: center; justify-content: center; width: 50%; height: 50px; text-align: center; cursor: pointer; text-decoration: none; background-color: #ffffff; color: #111111; border-top: 1px solid #dddddd; font-size: 16px; font-family: 'NotoSansRegular', '나눔바른고딕', 'NanumBarunGothic', 'Apple SD 산돌고딕 Neo', 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">닫기</a>
+			<a href="javascript:closePopup()" style="display: flex; align-items: center; justify-content: center; width: 50%; height: 50px; text-align: center; cursor: pointer; text-decoration: none; background-color: #ffffff; color: #111111; border-top: 1px solid #dddddd; font-size: 16px; font-family: 'NotoSansRegular', '나눔바른고딕', 'NanumBarunGothic', 'Apple SD 산돌고딕 Neo', 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; border-left: 1px solid #dddddd;">하루동안 보지 않기</a>
+		</div>
+
+</body>
+</body>
+</html>

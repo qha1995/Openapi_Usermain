@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>디지털서비스 개방</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fontset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+	<div id="wrapper" class="wrapper">
+		<header id="header" class="header"></header>
+
+		<!-- 브레드크럼 -->
+		<div class="wrap_breadcrumb">
+			<ol class="breadcrumb">
+				<li class="cat_home"><a href="00메인.html" class="home" title="메인화면으로 이동"></a></li>
+				<li class="cat_depth01">
+					<a href="javascript:;" class="cat_title cat_depth01_title current">API</a>
+					<ul class="cat_sub_menu">
+						<li class="cat_sub_item"><a href="01소개_01디지털서비스 개방 소개.html" target="_self" class="cat_sub_anchor">소개</a></li>
+						<li class="cat_sub_item"><a href="02서비스_01SRT승차권 예약.html" target="_self" class="cat_sub_anchor">서비스</a></li>
+						<li class="cat_sub_item"><a href="03API_01표준 API.html" target="_self" class="cat_sub_anchor">API</a></li>
+						<li class="cat_sub_item"><a href="04고객센터_01공지사항.html" target="_self" class="cat_sub_anchor">고객센터</a></li>
+						<li class="cat_sub_item"><a href="로그인,회원가입,마이페이지_03마이페이지.html" target="_self" class="cat_sub_anchor">마이페이지</a></li>
+					</ul>
+				</li>
+				<li class="cat_depth02">
+					<a href="javascript:;" class="cat_title cat_depth02_title current">공항 내 소요시간 안내(Home to Airport)</a>
+					<ul class="cat_sub_menu">
+						<li class="cat_sub_item"><a href="03API_01표준 API.html" target="_self" class="cat_sub_anchor">표준API</a></li>
+						<li class="cat_sub_item"><a href="03API_02자동차검사 예약.html" target="_self" class="cat_sub_anchor">자동차검사 예약</a></li>
+						<li class="cat_sub_item"><a href="03API_03휴양림 예약.html" target="_self" class="cat_sub_anchor">휴양림 예약</a></li>
+						<li class="cat_sub_item"><a href="03API_04국립수목원 예약.html" target="_self" class="cat_sub_anchor">국립수목원 예약</a></li>
+						<li class="cat_sub_item"><a href="03API_05세종·백두대간수목원 예약.html" target="_self" class="cat_sub_anchor">세종·백두대간수목원 예약</a></li>
+						<li class="cat_sub_item"><a href="03API_06공항 내 소요시간 안내(Home to Airport).html" target="_self" class="cat_sub_anchor">공항 내 소요시간 안내(Home to Airport)</a></li>
+						<li class="cat_sub_item"><a href="03API_07문화누리카드 발급신청 및 이용내역 조회.html" target="_self" class="cat_sub_anchor">문화누리카드 발급신청 및 이용내역 조회</a></li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+
+		<!-- 카테고리 타이틀 -->
+		<section class="section_title api">
+			<h2>API</h2>
+		</section>
+
+		<!-- 메인  -->
+		<main class="main">
+
+			<!-- 좌측 사이드 메뉴 -->
+			<aside id="sidemenu" class="aside">
+				<div class="inner_aside"> 
+					<h3 class="side_title">API</h3>
+					<nav class="aside_lnb">
+						<h2 class="sr_only">서브메뉴</h2>
+						<div class="depth depth01">
+							<ul class="depth_list depth01_list">
+								<li class="depth01_item"><a href="03API_01표준 API.html" target="_self" class="depth_text depth01_text">표준API</a></li>
+								<li class="depth01_item"><a href="03API_02자동차검사 예약.html" target="_self" class="depth_text depth01_text">자동차검사 예약</a></li>
+								<li class="depth01_item"><a href="03API_03휴양림 예약.html" target="_self" class="depth_text depth01_text">휴양림 예약</a></li>
+								<li class="depth01_item"><a href="03API_04국립수목원 예약.html" target="_self" class="depth_text depth01_text">국립수목원 예약</a></li>
+								<li class="depth01_item"><a href="03API_05세종·백두대간수목원 예약.html" target="_self" class="depth_text depth01_text">세종·백두대간수목원 예약</a></li>
+								<li class="depth01_item"><a href="03API_06공항 내 소요시간 안내(Home to Airport).html" target="_self" class="depth_text depth01_text currently">공항 내 소요시간 안내(Home to Airport)</a></li>
+								<li class="depth01_item"><a href="03API_07문화누리카드 발급신청 및 이용내역 조회.html" target="_self" class="depth_text depth01_text">문화누리카드 발급신청 및 이용내역 조회</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</aside>
+
+			<!-- 본문 외부 영역 -->
+			<section id="content" class="section api">
+				<!-- <h2 class="sr_only">API</h2> -->
+
+				<!-- 본문 -->
+				<article class="page">
+
+					<h2 class="page_title">공항 내 소요시간 안내<br class="only_mob">(Home to Airport)</h2>
+
+					<div class="page_content">
+							<div class="box_type_img">
+								<h3>API 개요</h3>
+								<p>공항 내 소요시간 안내(Home to Airport) 서비스는 국민이 자주 사용하는 민간 플랫폼을 통해 집에서 항공기 탑승 게이트까지 이동할 경우의 소요시간과 경로를 검색할 수 있게 해줍니다. 이용기관은 국민이 실행하고자 하는 작업에 알맞은 개별의 API를 이용하여, 입력 받은 작업을 요청하고 조회하여 국민에게 제공할 수 있습니다.</p>
+								<img src="../../public/img/api/api_02_1.png" class="only_wide" alt="공항내 소요기간 안내 사용자 이용 프로세스 순서는 다음과 같습니다.
+1.민간 플랫폼에 접속
+2.항공편 명, 출발 시간 입력 및 조회 
+3.현재 위치부터 탑승구까지 소요시간 확인">
+								<img src="../../public/img/api/m_api_02_1.png" class="only_mob" alt="공항내 소요기간 안내 사용자 이용 프로세스 순서는 다음과 같습니다.
+1.민간 플랫폼에 접속
+2.항공편 명, 출발 시간 입력 및 조회 
+3.현재 위치부터 탑승구까지 소요시간 확인">
+							</div>
+							<!-- <div class="box_type_img">
+								<h3>처리 방식</h3>
+								<p>이용기관은 사용자가 서비스를 사용하는 과정에서 획득한 신청자 정보와 Access Key를 사용하여 필요한 API를 호출합니다.</p>
+								<img src="../../public/img/api/api_02_2.png" class="only_wide" alt="처리 방식 도식화">
+								<img src="../../public/img/api/m_api_02_2.png" class="only_mob" alt="처리 방식 도식화">
+							</div> -->
+
+							<section class="wrap_detail_api">
+								<h3 class="tit_bottom_sub detail_api_tit">개별 API</h3>
+								<button type="button" class="btn_submit filled_blue btn_accodian_all">모두 접기</button>
+								<div class="wrap_accodian">
+									<ul class="accodian_list">
+										<li class="wrap_accodian_item">
+<a href="javascript:;" role="button" class="accodian_item">
+											<div class="accodian_tit">
+													<div class="box_txt">
+															<h3>HTA 일일 항공편 조회</h3>
+													</div>
+											</div>
+											<div class="accodian_cnt">
+												<div class="box_accodian_cnt">
+														<h4>요청 메시지 URL</h4>
+														<!-- 테이블 -->
+														<div class="wrap_table">
+															<table class="table table_row">
+																<caption>요청 메시지 URL</caption>
+																<tbody>
+																	<tr>
+																		<th scope="row">
+																			<p>HTTP 메소드</p>
+																		</th>
+																		<td>
+																			GET
+																		</td>
+																	</tr>
+																	<tr>
+																		<th scope="row">
+																			<p>API URL</p>
+																		</th>
+																		<td>
+																			http://apis.data.go.kr/B551182/hospDiagInfoService1/getClinicTop5List1
+																		</td>
+																	</tr>
+								
+																</tbody>
+															</table>
+														</div>
+														<!-- 테이블 end -->
+												</div>
+													
+												<div class="box_accodian_cnt">
+														<h4>요청 메시지 명세</h4>
+														<!-- 테이블 -->
+														<div class="wrap_table">
+															<table class="table table_detail">
+																<caption>요청 메시지 명세</caption>
+																<colgroup>
+																	<col style="width:114px;">
+																	<col style="width:139px;">
+																	<col style="width:138px;">
+																	<col style="width:140px;">
+																	<col style="width:114px;">
+																	<col style="width:116px;">
+																	<col style="width:auto;">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">HTTP</th>
+																		<th scope="col">항목 명(영문)</th>
+																		<th scope="col">항목 명(국문)</th>
+																		<th scope="col">값</th>
+																		<th scope="col">필수여부</th>
+																		<th scope="col">TYPE(크기)</th>
+																		<th scope="col">항목 설명</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td rowspan="3">
+																			Header
+																		</td>
+																		<td>
+																			user_info
+																		</td>
+																		<td>
+																			사용자 정보
+																		</td>
+																		<td>
+																			“19781212”
+																		</td>
+																		<td>
+																			Y
+																		</td>
+																		<td>
+																			B64(100)
+																		</td>
+																		<td>
+																			사용자의 생년월일
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			lang
+																		</td>
+																		<td>
+																			언어
+																		</td>
+																		<td>
+																			“kor”
+																		</td>
+																		<td>
+																			Y
+																		</td>
+																		<td>
+																			B64(100)
+																		</td>
+																		<td>
+																			선택 가능한 언어
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			service_name
+																		</td>
+																		<td>
+																			사용자 정보
+																		</td>
+																		<td>
+																			“문화누리카드”
+																		</td>
+																		<td>
+																			Y
+																		</td>
+																		<td>
+																			B64(100)
+																		</td>
+																		<td>
+																			사용자의 정보
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			Parameter
+																		</td>
+																		<td>
+																			service_name
+																		</td>
+																		<td>
+																			교환 고유번호
+																		</td>
+																		<td>
+																			“문화누리카드”
+																		</td>
+																		<td>
+																			Y
+																		</td>
+																		<td>
+																			B64(100)
+																		</td>
+																		<td>
+																			제공하는 서비스 이름
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<!-- 테이블 end -->
+												</div>
+			
+												<div class="box_accodian_cnt">
+														<h4>응답 메시지 명세</h4>
+														<!-- 테이블 -->
+														<div class="wrap_table">
+															<table class="table table_detail">
+																<caption>응답 메시지 명세</caption>
+																<colgroup>
+																	<col style="width:114px;">
+																	<col style="width:139px;">
+																	<col style="width:138px;">
+																	<col style="width:140px;">
+																	<col style="width:114px;">
+																	<col style="width:116px;">
+																	<col style="width:auto;">
+																</colgroup>
+																<thead>
+																	<tr>
+																		<th scope="col">HTTP</th>
+																		<th scope="col">항목 명(영문)</th>
+																		<th scope="col">항목 명(국문)</th>
+																		<th scope="col">값</th>
+																		<th scope="col">필수여부</th>
+																		<th scope="col">TYPE(크기)</th>
+																		<th scope="col">항목 설명</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td rowspan="4">
+																			Header
+																		</td>
+																		<td>
+																			api_tran_id
+																		</td>
+																		<td>
+																			교환 고유번호
+																		</td>
+																		<td>
+																			“A00000000”
+																		</td>
+																		<td>
+																			Y
+																		</td>
+																		<td>
+																			B64(100)
+																		</td>
+																		<td>
+																			거래 고유번호
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			api_tran_id
+																		</td>
+																		<td>
+																			교환 고유번호
+																		</td>
+																		<td>
+																			“A00000000”
+																		</td>
+																		<td>
+																			Y
+																		</td>
+																		<td>
+																			B64(100)
+																		</td>
+																		<td>
+																			거래 고유번호
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			api_tran_id
+																		</td>
+																		<td>
+																			교환 고유번호
+																		</td>
+																		<td>
+																			“A00000000”
+																		</td>
+																		<td>
+																			Y
+																		</td>
+																		<td>
+																			B64(100)
+																		</td>
+																		<td>
+																			거래 고유번호
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																			api_tran_id
+																		</td>
+																		<td>
+																			교환 고유번호
+																		</td>
+																		<td>
+																			“A00000000”
+																		</td>
+																		<td>
+																			Y
+																		</td>
+																		<td>
+																			B64(100)
+																		</td>
+																		<td>
+																			거래 고유번호
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+														<!-- 테이블 end -->
+												</div>
+			
+												<div class="box_accodian_cnt">
+													<h4>응답 메시지 예시</h4>
+													<!-- 테이블 -->
+													<div class="wrap_table">
+														<table class="table table_row">
+															<caption>응답 메시지 예시</caption>
+															<tbody>
+																<tr>
+																	<th scope="row">
+																		<p>응답 메시지 예시</p>
+																	</th>
+																	<td>
+																		<!-- <pre>
+{"api_tran_id": "2ffd133a-d17a-431d-a6a5",
+"api_tran_dtm": "20190910101921567",
+"rsp_code": "A0000",
+"rsp_message": "",
+}
+.	
+																		</pre> -->
+																		<!-- <textarea name="" id="" cols="30" rows="10">{"api_tran_id": "2ffd133a-d17a-431d-a6a5",
+																			"api_tran_dtm": "20190910101921567",
+																			"rsp_code": "A0000",
+																			"rsp_message": "",
+																			}
+																			.
+																			</textarea> -->
+																			<div class="box_text">
+																				{"api_tran_id": "2ffd133a-d17a-431d-a6a5",
+"api_tran_dtm": "20190910101921567",
+"rsp_code": "A0000",
+"rsp_message": "",
+}
+.	
+																			</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<!-- 테이블 end -->
+													</div>
+											</div>
+										</a>
+									</li>
+									</ul>
+								</div>
+								<button type="button" class="btn_submit filled_blue btn_accodian_all">모두 접기</button>
+							</section>
+						</div>
+					
+				</article>
+				<!-- 본문 end  -->
+			</section>
+			<!-- 본문 외부 영역 end-->
+		</main>
+		<!-- 전체 영역 end  -->
+
+		<footer id="footer" class="footer"></footer>
+
+	</div>
+
+</body>
+
+</html>

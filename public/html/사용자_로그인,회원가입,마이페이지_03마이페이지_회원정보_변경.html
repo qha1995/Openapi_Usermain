@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>디지털서비스 개방</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/fontset.css" />
+    <!-- font size rem 적용  -->
+    <link rel="stylesheet" href="../css/base.css" />
+    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+    <!-- res 적용된 layout  -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- style 삭제예정?  -->
+    <link rel="stylesheet" href="../css/layout.css" />
+    <!-- <link rel="stylesheet" href="../css/header.css" /> -->
+    <!-- <link rel="stylesheet" href="../css/style_res.css" /> -->
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper">
+        <header id="header" class="header"></header>
+
+        <!-- 카테고리 타이틀 -->
+        <section class="section_title">
+            <h2>마이페이지</h2>
+        </section>
+
+        <!-- 브레드크럼 -->
+        <div class="wrap_breadcrumb">
+            <ol class="breadcrumb">
+                <li class="cat_home"><a href="main.html" class="home" title="메인화면으로 이동"></a></li>
+                <li class="cat_depth01">
+                    <a href="javascript:;" class="cat_title cat_depth01_title current">마이페이지</a>
+                    <ul class="cat_sub_menu">
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="cat_sub_anchor">01</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="cat_sub_anchor">02</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="cat_sub_anchor">03</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="cat_sub_anchor">04</a></li>
+                    </ul>
+                </li>
+                <li class="cat_depth02">
+                    <a href="javascript:;" class="cat_title cat_depth02_title current">회원정보변경</a>
+                    <ul class="cat_sub_menu">
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="cat_sub_anchor">01</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="cat_sub_anchor">02</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="cat_sub_anchor">03</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="cat_sub_anchor">04</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+
+        <!-- 메인  -->
+        <main class="main">
+
+            <!-- 좌측 사이드 메뉴 -->
+            <aside id="sidemenu" class="aside">
+                <div class="inner_aside">
+                    <h2 class="side_title">마이페이지</h2>
+                    <nav class="aside_lnb">
+                        <h2 class="sr_only">서브메뉴</h2>
+                        <div class="depth depth01">
+                            <ul class="depth_list depth01_list">
+                                <li class="depth01_item">
+                                    <a href="javascript:;" target="_self" class="depth_text depth01_text currently">회원정보 변경</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </aside>
+            <!-- 좌측 사이드 메뉴 end -->
+
+            <!-- 메인  -->
+            <section class="section">
+                <!-- <h2 class="section_title sr_only">제목</h2> -->
+                <!-- 본문 -->
+                
+
+                    
+                    <h2 class="page_title">회원정보 변경</h2>
+
+                    <div class="page_content">
+
+                        <div class="wrap_table">
+                            <table class="table table_row">
+                                <caption>회원정보 변경</caption>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <p>소속</p>
+                                        </th>
+                                        <td>
+                                            <p>네이버 주식회사</p>
+                                            <!-- <input type="text" placeholder="소속을 입력해주세요." value="네이버 주식회사"> -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <p>사용자 명</p>
+                                        </th>
+                                        <td>김지수</td>
+                                        <!-- <p>김지수</p> -->
+                                        <!-- <input type="text" placeholder="사용자 명을 입력해주세요." value="김지수"> -->
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <p>사무실 전화</p>
+                                        </th>
+                                        <td>
+                                            <input type="tel" placeholder="" value="02" maxlength="4">
+                                            <div class="bar_dash"></div>
+                                            <input type="tel" placeholder="" value="3423" maxlength="4">
+                                            <div class="bar_dash"></div>
+                                            <input type="tel" placeholder="" value="3423" maxlength="4">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row">
+                                            <p>휴대전화</p>
+                                        </th>
+                                        <td>
+                                            <input type="tel" placeholder="" value="02" maxlength="4">
+                                            <div class="bar_dash"></div>
+                                            <input type="tel" placeholder="" value="3423" maxlength="4">
+                                            <div class="bar_dash"></div>
+                                            <input type="tel" placeholder="" value="3423" maxlength="4">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <p>이메일</p>
+                                        </th>
+                                        <td>
+                                            <input type="text" placeholder="이메일을 입력해주세요." value="im0000@naver.com">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <p>기관 우편번호</p>
+                                        </th>
+                                        <td>
+                                            <input type="text" placeholder="기관 우편번호" value="12345" readonly>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <p>기관 주소</p>
+                                        </th>
+                                        <td>
+                                            <input type="text" placeholder="기관 주소를 입력해주세요." value="경기 성남시 분당구 정자일로 95" readonly>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <p>아이디</p>
+                                        </th>
+                                        <td>
+                                            <input type="text" placeholder="아이디를 입력해주세요." value="wetkdkdskgmel23423" readonly>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <p>비밀번호</p>
+                                        </th>
+                                        <td>
+                                            <input type="text" placeholder="비밀번호를 입력해주세요." value="klj32423ks45345" readonly>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- table end -->
+
+                       
+                        <div class="wrap_btns">
+                            <a  href="javascript:;" target="_self" class="btn_submit lined_blue">취소</a>
+                            <a href="javascript:;" target="_self" class="btn_submit filled_blue">등록</a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                </article>
+                <!-- 본문 end  -->
+            </section>
+            <!-- 본문 외부 영역 end-->
+        </main>
+        <!-- 전체 영역 end  -->
+
+        <footer id="footer" class="footer"></footer>
+
+    </div>
+ 
+</body>
+
+</html>

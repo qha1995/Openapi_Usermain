@@ -1,0 +1,1444 @@
+@charset "UTF-8";
+.flex_center {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+/* font size */
+/* gnb_open 하단 dim   */
+.gnb_open .gnb::before,
+.search_open .gnb::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.search_open .gnb::before {
+  z-index: -1;
+}
+
+.wrap_gnb {
+  position: relative;
+  background-color: antiquewhite;
+}
+
+/* 헤더 최상단 화면 크기 제어 + 로그인 버튼 영역 */
+.area_top {
+  width: 100%;
+  background-color: #15285f;
+}
+.area_top a:focus {
+  outline-style: dashed;
+  outline-width: 2px;
+  outline-offset: -1px;
+  outline-color: #fff;
+}
+.area_top .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120rem;
+  height: 4rem;
+  margin: auto;
+}
+.area_top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.area_top li {
+  position: relative;
+  padding: 0px 1.5rem;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.area_top li:last-child {
+  padding-right: 0;
+}
+.area_top li::after {
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+  background-color: #fff;
+}
+.area_top li:last-child:after {
+  display: none;
+}
+.area_top .box_zoom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.area_top .box_zoom .btn_zoom {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-left: 0.5rem;
+  border: 1px solid #fff;
+  color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.area_top .box_zoom .btn_zoom.in {
+  margin-left: 1.1rem;
+  background-image: url("../../public/img/icons/icon_plus.png");
+  background-size: 0.9rem 0.9rem;
+}
+.area_top .box_zoom .btn_zoom.out {
+  background-image: url("../../public/img/icons/icon_minus.png");
+  background-size: 0.9rem 0.1rem;
+}
+.area_top .box_zoom .btn_zoom.reset {
+  background-image: url("../../public/img/icons/icon_reset.png");
+  background-size: 1rem 1rem;
+}
+
+/* area_menu */
+.area_menu {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+.area_menu .wrap_mob_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120rem;
+  height: 7.1rem;
+  margin: auto;
+  padding: 1.7rem 0;
+}
+.area_menu .logo {
+  width: 16.8rem;
+  height: 3.8rem;
+}
+.area_menu .logo img {
+  width: 100%;
+  height: 100%;
+}
+.area_menu .wrap_utils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 8.2rem;
+}
+.area_menu .wrap_utils .btn_ghost {
+  position: relative;
+  width: 2.8rem;
+  height: 2.5rem;
+}
+.area_menu .wrap_utils .btn_ghost::after {
+  background-image: url("../../public/img/icons/icon_btn_ghost.png");
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.area_menu .wrap_utils .btn_search {
+  position: relative;
+  width: 2.4rem;
+  height: 2.5rem;
+}
+.area_menu .wrap_utils .btn_search::after {
+  background-image: url("../../public/img/icons/icon_search.png");
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.area_menu .drop_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+  width: 100%;
+  height: 373px;
+  margin-left: auto;
+  gap: 2rem;
+  background-color: cadetblue;
+}
+.area_menu .drop_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 86rem;
+  height: 100%;
+}
+.area_menu .drop_menu ul > li {
+  position: relative;
+}
+.area_menu .drop_menu ul > li.depth01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+}
+.area_menu .drop_menu ul > li.depth01 a {
+  height: 71px;
+  line-height: 40px;
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.area_menu .drop_menu ul > li.depth01:hover a {
+  color: #15285f;
+}
+.area_menu .drop_menu ul > li.depth01:hover::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: #15285f;
+}
+.area_menu .drop_menu ul > li ul li {
+  margin-top: 4px;
+  margin-bottom: 17px;
+  text-align: left;
+}
+.area_menu .drop_menu ul > li ul li a {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+}
+.area_menu .drop_menu ul > li ul li a.on {
+  color: #002eb4;
+}
+.area_menu .drop_menu ul > li ul.depth02 a {
+  font-size: 16px;
+}
+.area_menu .drop_menu {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+.area_menu .drop_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 86rem;
+  background-color: #fff;
+}
+.area_menu .drop_menu ul .depth01 {
+  position: relative;
+  width: 25%;
+}
+.area_menu .drop_menu ul .depth01::before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: calc(100% - 7.1rem);
+  content: "";
+  background-color: #ddd;
+}
+.area_menu .drop_menu ul .depth01:last-child::after {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: calc(100% - 7.1rem);
+  content: "";
+  background-color: #ddd;
+}
+.area_menu .drop_menu ul .depth01:hover {
+  background-color: #eee;
+}
+.area_menu .drop_menu ul .depth01:hover .depth01_item a {
+  background-color: #fff;
+}
+.area_menu .drop_menu ul .depth01:hover .depth01_item a::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-color: #15285f;
+}
+.area_menu .drop_menu ul .depth01 .depth01_item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  height: 7.1rem;
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+.area_menu .drop_menu ul .depth01 .depth01_item a:hover::after, .area_menu .drop_menu ul .depth01 .depth01_item a.on::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-color: #15285f;
+}
+.area_menu .drop_menu ul .depth02 {
+  width: 100%;
+  padding: 4rem 2rem 5rem;
+  text-align: left;
+}
+.area_menu .drop_menu ul .depth02 ul li:first-child {
+  margin-top: 0;
+}
+.area_menu .drop_menu ul .depth02 ul li a {
+  line-height: 1;
+  padding: 10px 0;
+  font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+}
+.area_menu .drop_menu ul .depth02 ul li a:hover, .area_menu .drop_menu ul .depth02 ul li a.on {
+  color: #1953d5;
+}
+.area_menu .drop_menu {
+  height: 100%;
+  background-color: #fff;
+}
+.area_menu .drop_menu:hover .depth02,
+.area_menu .drop_menu.on .depth02 {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.area_menu .drop_menu:hover .depth02::before,
+.area_menu .drop_menu.on .depth02::before {
+  display: block;
+  z-index: 8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  content: "";
+  background-color: #fff;
+}
+.area_menu .menu_search_open .box_search {
+  display: none;
+  position: relative;
+  width: 60rem;
+  height: 100%;
+}
+.area_menu .menu_search_open .box_search .tit_search {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  line-height: 3.6rem;
+  margin-right: 2rem;
+  color: #111;
+  font-size: 1.6rem;
+}
+.area_menu .menu_search_open .box_search .search_input {
+  width: 100%;
+  height: 3.6rem;
+  padding: 0 1.5rem;
+  padding-right: 7rem;
+  border: none;
+  border-bottom: 2px solid #111;
+  color: #111;
+  font-size: 1.6rem;
+}
+.area_menu .menu_search_open .box_search .search_input::-webkit-input-placeholder {
+  color: #aaa;
+}
+.area_menu .menu_search_open .box_search .search_input::-moz-placeholder {
+  color: #aaa;
+}
+.area_menu .menu_search_open .box_search .search_input:-ms-input-placeholder {
+  color: #aaa;
+}
+.area_menu .menu_search_open .box_search .search_input::-ms-input-placeholder {
+  color: #aaa;
+}
+.area_menu .menu_search_open .box_search .search_input::placeholder {
+  color: #aaa;
+}
+.area_menu .menu_search_open .box_search .btn_search {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.area_menu .menu_search_open .box_search .btn_search::after {
+  background-image: url("../../public/img/icons/icon_search.png");
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.drop_menu {
+  display: inline-block;
+  overflow: hidden;
+}
+.drop_menu .menu {
+  float: left;
+  margin-left: 20px;
+  padding: 20px 0;
+}
+.drop_menu .menu:first-child {
+  margin: 0;
+}
+
+.h {
+  padding: 0 20px;
+}
+
+.s {
+  overflow: hidden;
+  height: 100%;
+  text-align: left;
+}
+.s ul {
+  overflow: hidden;
+}
+.s ul > li {
+  line-height: 1;
+  margin-top: 10px;
+}
+.s ul > li:first-child {
+  margin-top: 20px;
+}
+
+/*  헤더 영역  */
+/* header start  */
+.skip {
+  overflow: hidden;
+  z-index: 101;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+.skip a {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.inner {
+  width: 120rem;
+  margin: auto;
+}
+
+.wrap_group.on, .wrap_group.open {
+  display: block;
+}
+
+/* 헤더 최상단 화면 크기 제어 + 로그인 버튼 영역 */
+.area_top {
+  width: 100%;
+  height: 4rem;
+  background-color: #15285f;
+}
+.area_top a:focus {
+  border-radius: 0;
+  outline-style: dashed;
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-color: #fff;
+}
+.area_top .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120rem;
+  height: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.area_top .box_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.area_top .box_btns li {
+  position: relative;
+  padding: 0px 1.5rem;
+}
+.area_top .box_btns li::after {
+  display: block;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #fff;
+  content: "";
+}
+.area_top .box_btns li:last-child:after {
+  display: none;
+}
+.area_top .box_btn_zoom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.area_top .box_btn_zoom .btn_zoom {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-left: 1.1rem;
+  border: 1px solid #fff;
+  color: white;
+  background-image: url("../../public/img/icons/icon_plus.png");
+  background-position: center center;
+  background-size: 0.9rem 0.9rem;
+  background-repeat: no-repeat;
+}
+.area_top .box_btn_zoom .btn_zoom.out {
+  background-image: url("../../public/img/icons/icon_minus.png");
+  background-position: center center;
+  background-size: 0.9rem 0.1rem;
+}
+.area_top .box_btn_zoom .btn_zoom.reset {
+  background-image: url("../../public/img/icons/icon_reset.png");
+  background-position: center center;
+  background-size: 1rem 1rem;
+}
+.area_top .box_btn_zoom .btn_zoom_in {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-left: 1.1rem;
+  border: 1px solid #fff;
+  color: white;
+  background-image: url("../../public/img/icons/icon_plus.png");
+  background-position: center center;
+  background-size: 0.9rem 0.9rem;
+  background-repeat: no-repeat;
+}
+.area_top .box_btn_zoom .btn_zoom_out {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-left: 0.5rem;
+  border: 1px solid #fff;
+  color: white;
+  background-image: url("../../public/img/icons/icon_minus.png");
+  background-position: center center;
+  background-size: 0.9rem 0.1rem;
+  background-repeat: no-repeat;
+}
+.area_top .box_btn_zoom .btn_zoom_reset {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-left: 0.5rem;
+  border: 1px solid #fff;
+  color: white;
+  background-image: url("../../public/img/icons/icon_reset.png");
+  background-position: center center;
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+}
+
+.drop_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+  width: 100%;
+  height: 37.3rem;
+  margin-left: auto;
+  gap: 2rem;
+  background-color: cadetblue;
+}
+.drop_menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 86rem;
+  height: 100%;
+}
+.drop_menu ul > li {
+  position: relative;
+}
+.drop_menu ul > li.depth01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+}
+.drop_menu ul > li.depth01 a {
+  height: 71px;
+  line-height: 40px;
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.drop_menu ul > li.depth01:hover a {
+  color: #15285f;
+}
+.drop_menu ul > li.depth01:hover::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  content: "";
+  background-color: #15285f;
+}
+.drop_menu ul > li ul li {
+  margin-top: 4px;
+  margin-bottom: 17px;
+  text-align: left;
+}
+.drop_menu ul > li ul li a {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+}
+.drop_menu ul > li ul li a.on {
+  color: #002eb4;
+}
+.drop_menu ul > li ul.depth02 a {
+  font-size: 16px;
+}
+
+.wrap_menus {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+.wrap_menus .drop_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 86rem;
+  -webkit-transform: translateX(calc(-50% + 50px));
+          transform: translateX(calc(-50% + 50px));
+  background-color: #fff;
+}
+.wrap_menus .drop_menu .depth01 {
+  position: relative;
+  width: 25%;
+}
+.wrap_menus .drop_menu .depth01::before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: calc(100% - 7.1rem);
+  content: "";
+  background-color: #ddd;
+}
+.wrap_menus .drop_menu .depth01:last-child::after {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: calc(100% - 7.1rem);
+  content: "";
+  background-color: #ddd;
+}
+.wrap_menus .drop_menu .depth01:hover {
+  background-color: #eee;
+}
+.wrap_menus .drop_menu .depth01:hover .depth01_item {
+  background-color: #fff;
+}
+.wrap_menus .drop_menu .depth01:hover .depth01_item::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-color: #15285f;
+}
+.wrap_menus .drop_menu .depth01 .depth01_item .depth01_item_anchor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  height: 7.1rem;
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+.wrap_menus .drop_menu .depth01 .depth01_item .depth01_item_anchor:hover::after, .wrap_menus .drop_menu .depth01 .depth01_item .depth01_item_anchor.on::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background-color: #15285f;
+}
+.wrap_menus .drop_menu .depth02 {
+  width: 100%;
+  padding: 4rem 2rem 5rem;
+  text-align: left;
+}
+.wrap_menus .drop_menu .depth02 .depth02_item:first-child {
+  margin-top: 0;
+}
+.wrap_menus .drop_menu .depth02 .depth02_item a {
+  line-height: 1;
+  padding: 10px 0;
+  font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+}
+.wrap_menus .drop_menu .depth02 .depth02_item a:hover, .wrap_menus .drop_menu .depth02 .depth02_item a.on {
+  color: #1953d5;
+}
+
+.drop_menu:hover .depth02,
+.drop_menu.on .depth02 {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.drop_menu:hover .depth02::before,
+.drop_menu.on .depth02::before {
+  display: block;
+  z-index: 8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  content: "";
+  background-color: #fff;
+}
+
+.wrap_group.search {
+  height: 0;
+}
+.wrap_group.search.open {
+  height: 16rem;
+}
+.wrap_group.search .group_search,
+.wrap_group.search .box_search {
+  display: none;
+  position: relative;
+  width: 60rem;
+  height: 100%;
+}
+.wrap_group.search .group_search .tit_search,
+.wrap_group.search .box_search .tit_search {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  line-height: 3.6rem;
+  margin-right: 2rem;
+  color: #111;
+  font-size: 1.6rem;
+}
+.wrap_group.search .group_search .btn_lnb_search,
+.wrap_group.search .box_search .btn_lnb_search {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.wrap_group.search .group_search .btn_lnb_search::after,
+.wrap_group.search .box_search .btn_lnb_search::after {
+  background-image: url("../../public/img/icons/icon_search.png");
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.wrap_group.search .wrap_lnb_search input {
+  width: 60rem;
+  height: 3.6rem;
+  padding: 0 1.5rem;
+  padding-right: 7rem;
+  border: none;
+  border-bottom: 2px solid #111;
+  color: #111;
+  font-size: 1.6rem;
+}
+.wrap_group.search .wrap_lnb_search input::-webkit-input-placeholder {
+  color: #aaa;
+}
+.wrap_group.search .wrap_lnb_search input::-moz-placeholder {
+  color: #aaa;
+}
+.wrap_group.search .wrap_lnb_search input:-ms-input-placeholder {
+  color: #aaa;
+}
+.wrap_group.search .wrap_lnb_search input::-ms-input-placeholder {
+  color: #aaa;
+}
+.wrap_group.search .wrap_lnb_search input::placeholder {
+  color: #aaa;
+}
+.wrap_group.search .wrap_lnb_search .btn_lnb_search {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.wrap_group.search .wrap_lnb_search .btn_lnb_search::after {
+  background-image: url("../../public/img/icons/icon_search.png");
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.area_mask {
+  display: none;
+  z-index: 12;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+}
+.area_mask.on {
+  display: block;
+}
+
+.dim {
+  display: block !important;
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  line-height: 2;
+  visibility: hidden;
+  font-weight: 300;
+  text-align: left;
+  opacity: 0;
+}
+.dim::after {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1000%;
+  height: 100%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  content: "";
+}
+.dim.on {
+  display: block;
+  z-index: 0;
+  visibility: visible;
+  opacity: 0;
+}
+
+/*  html5 tag layout 설정  */
+.header {
+  width: 100%;
+  height: 11.2rem;
+  border-bottom: #ddd;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+  background-color: #fff;
+  /*  헤더 영역 하단 선 */
+}
+
+.gnb_wide {
+  /* area_menu */
+}
+.gnb_wide .area_state .user_info {
+  display: none;
+}
+.gnb_wide .depth02_item .depth03 {
+  display: none;
+}
+.gnb_wide .area_menu {
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.gnb_wide .area_menu .wrap_utils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 120rem;
+  height: 100%;
+  height: 7.1rem;
+  margin: auto;
+  padding: 1.7rem 0;
+}
+.gnb_wide .area_menu .wrap_utils .logo {
+  width: 16.8rem;
+  height: 3.8rem;
+}
+.gnb_wide .area_menu .wrap_utils .box_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 8.2rem;
+  margin-left: auto;
+}
+.gnb_wide .area_menu .wrap_utils .box_btn .box_btn_item .btn_ghost,
+.gnb_wide .area_menu .wrap_utils .box_btn .box_btn_item .btn_util_sitemap {
+  position: relative;
+  width: 2.8rem;
+  height: 2.5rem;
+}
+.gnb_wide .area_menu .wrap_utils .box_btn .box_btn_item .btn_ghost::after,
+.gnb_wide .area_menu .wrap_utils .box_btn .box_btn_item .btn_util_sitemap::after {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../public/img/icons/icon_btn_ghost.png");
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.gnb_wide .area_menu .wrap_utils .box_btn .box_btn_item .btn_search,
+.gnb_wide .area_menu .wrap_utils .box_btn .box_btn_item .btn_util_search {
+  position: relative;
+  width: 2.4rem;
+  height: 2.5rem;
+}
+.gnb_wide .area_menu .wrap_utils .box_btn .box_btn_item .btn_search::after,
+.gnb_wide .area_menu .wrap_utils .box_btn .box_btn_item .btn_util_search::after {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../public/img/icons/icon_search.png");
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.gnb_wide .area_menu .wrap_utils .box_btn .box_btn_item .btn_search.on::after,
+.gnb_wide .area_menu .wrap_utils .box_btn .box_btn_item .btn_util_search.on::after {
+  background-image: url("../../public/img/icons/icon_x.png");
+}
+
+.gnb_mob .area_menu .wrap_utils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gnb_mob .wrap_utils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gnb_mob .logo_anchor {
+  width: auto;
+  height: 2.8rem;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: url(../img/logo/logo_big_wt.png);
+}
+
+.gnb_mob {
+  height: 6rem;
+}
+.gnb_mob::after {
+  top: 5.9rem;
+}
+.gnb_mob .area_top {
+  display: none;
+}
+.gnb_mob .area_menu .wrap_utils {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 6rem;
+  padding: 0.8rem 1.6rem;
+}
+.gnb_mob .area_menu .wrap_utils .logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2.8rem;
+}
+.gnb_mob .area_menu .wrap_utils .logo a {
+  width: auto;
+  height: 100%;
+}
+.gnb_mob .area_menu .wrap_utils .box_btn {
+  width: 6.8rem;
+}
+.gnb_mob .area_menu .wrap_utils .box_btn .box_btn_item .btn_search {
+  width: 2.4rem;
+  height: 2.6rem;
+}
+.gnb_mob .area_menu .wrap_utils .box_btn .box_btn_item .btn_ghost {
+  width: 2.4rem;
+  height: 2.15rem;
+}
+.gnb_mob .wrap_menus {
+  display: none;
+}
+.gnb_mob .wrap_menus.on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 84%;
+  margin-left: auto;
+}
+.gnb_mob .wrap_menus.on .area_state {
+  z-index: 20;
+  position: relative;
+  width: 100%;
+  padding: 2rem 1.9rem 2.6rem;
+  background-color: #15285f;
+}
+.gnb_mob .wrap_menus.on .area_state .btn_close_menu {
+  position: absolute;
+  top: 2rem;
+  left: 1.9rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url(../img/icons/icon_x_wt.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gnb_mob .wrap_menus.on .area_state .user_info {
+  position: relative;
+}
+.gnb_mob .wrap_menus.on .area_state .user_info .logo_lnb {
+  height: 2.9rem;
+  margin-top: 1.7rem;
+}
+.gnb_mob .wrap_menus.on .area_state .user_info .logo_lnb a {
+  height: 100%;
+  margin: 0 auto;
+}
+.gnb_mob .wrap_menus.on .area_state .user_info .box_state {
+  width: 100%;
+  padding-top: 2.35rem;
+}
+.gnb_mob .wrap_menus.on .area_state .user_info .box_state .greeting {
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.gnb_mob .wrap_menus.on .area_state .user_info .box_state .box_btn_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 23rem;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+.gnb_mob .wrap_menus.on .area_state .user_info .box_state .box_btn_info .btn_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11rem;
+  height: 3rem;
+  border-radius: 0.35rem;
+  color: #111;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #fff;
+}
+.gnb_mob .wrap_menus.on .area_state .user_info .area_profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+.gnb_mob .wrap_menus.on .area_state .user_info .area_profile .wrap_img_profile {
+  overflow: hidden;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #26357c;
+}
+.gnb_mob .wrap_menus.on .area_state .user_info .area_profile .wrap_img_profile img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.gnb_mob .wrap_menus.on .area_state .user_info .area_profile .wrap_txt_profile {
+  width: calc(100% - 6.5rem);
+  font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.gnb_mob .wrap_menus.on .area_state .user_info .area_profile .wrap_txt_profile h3 {
+  width: 100%;
+  color: #fff;
+  font-size: 1.8rem;
+}
+.gnb_mob .wrap_menus.on .area_state .user_info .area_profile .wrap_txt_profile .user_auth_state {
+  width: 100%;
+  margin-top: 1rem;
+  color: #aaa;
+  font-size: 1.4rem;
+}
+.gnb_mob .wrap_menus.on .area_state .user_info .user_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.gnb_mob .wrap_menus.on .drop_menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 0;
+  width: 100%;
+  -webkit-transform: unset;
+          transform: unset;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  top: unset;
+  bottom: unset;
+  left: unset;
+  right: unset;
+}
+.gnb_mob .wrap_menus.on .drop_menu .depth01 {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 4.1rem;
+  font-size: 1.6rem;
+  text-align: left;
+}
+.gnb_mob .wrap_menus.on .drop_menu .depth01:hover .depth01_item::after {
+  display: block;
+  position: absolute;
+  top: 2.5rem;
+  right: 3rem;
+  width: 1.6rem;
+  height: 1rem;
+  background-image: url(../img/icons/icon_chevron_wt.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+.gnb_mob .wrap_menus.on .drop_menu .depth01 .depth01_item .depth01_item_anchor {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 4.1rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.6rem;
+  text-align: left;
+  text-indent: 2rem;
+  background-color: #fff;
+}
+.gnb_mob .wrap_menus.on .drop_menu .depth02 {
+  width: 100%;
+  padding: 3rem 2.3rem 1.6rem 2rem;
+  text-align: left;
+  background-color: #edf2fc;
+}
+.gnb_mob .wrap_menus.on .drop_menu .depth02 .depth02_item:first-child {
+  margin-top: 0;
+}
+.gnb_mob .wrap_menus.on .drop_menu .depth02 .depth02_item::after {
+  display: block;
+  position: absolute;
+  top: 1.4rem;
+  right: 0;
+  width: 1.2rem;
+  height: 0.8rem;
+  background-image: url(../img/icons/icon_plus.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+.gnb_mob .wrap_menus.on .drop_menu .depth02 .depth02_item.item_toggle::after {
+  top: 1.4rem;
+  background-image: url(../img/icons/icon_minus.png);
+}
+.gnb_mob .wrap_menus.on .drop_menu .depth02 .depth02_item .depth02_item_anchor {
+  line-height: 1;
+  padding: 10px 0;
+  font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+}
+.gnb_mob .wrap_menus.on .drop_menu .depth02 .depth02_item .depth02_item_anchor:hover, .gnb_mob .wrap_menus.on .drop_menu .depth02 .depth02_item .depth02_item_anchor.on {
+  color: #1953d5;
+}
+.gnb_mob .wrap_menus.on .area_menu {
+  color: #fff;
+}
+.gnb_mob .wrap_menus.on .area_menu .depth01 {
+  width: 100%;
+  border-bottom: 1px solid #131f55;
+  background-color: #26357c;
+}
+.gnb_mob .wrap_menus.on .area_menu .depth01 .depth01_item {
+  position: relative;
+  line-height: 6rem;
+  font-size: 1.8rem;
+  text-indent: 3rem;
+}
+.gnb_mob .wrap_menus.on .area_menu .depth01 .depth01_item::after {
+  display: block;
+  position: absolute;
+  top: 2.5rem;
+  right: 3rem;
+  width: 1.6rem;
+  height: 1rem;
+  background-image: url(../img/icons/icon_chevron_wt.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+.gnb_mob .wrap_menus.on .area_menu .depth02_menu {
+  display: none;
+  padding: 1.2rem 3rem;
+  background-color: #131f55;
+}
+.gnb_mob .wrap_menus.on .area_menu .depth02 {
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  background-color: #131f55;
+}
+.gnb_mob .wrap_menus.on .area_menu .depth02.on span {
+  position: relative;
+}
+.gnb_mob .wrap_menus.on .area_menu .depth02.on span::after {
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  content: "";
+}
+.gnb_mob .wrap_menus.on .area_menu .depth02 .depth02_item {
+  position: relative;
+  line-height: 4rem;
+  font-size: 1.6rem;
+}
+.gnb_mob .wrap_menus.on .area_menu .depth02 .depth02_item.item_toggle::after {
+  display: block;
+  position: absolute;
+  top: 1.4rem;
+  right: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-image: url(../img/icons/icon_plus.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+.gnb_mob .wrap_menus.on .area_menu .depth03_menu {
+  display: none;
+  margin-top: 0.2rem;
+  margin-bottom: 1.2rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.7rem;
+  padding-left: 1.5rem;
+  background-color: #26357c;
+}
+.gnb_mob .wrap_menus.on .area_menu .depth03 {
+  padding-top: 0.7rem;
+}
+.gnb_mob .wrap_menus.on .area_menu .depth03 .depth03_item {
+  line-height: 3rem;
+  color: #aaa;
+  font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.4rem;
+}
+.gnb_mob .wrap_menus.on .area_menu .depth03 .depth03_item.on, .gnb_mob .wrap_menus.on .area_menu .depth03 .depth03_item:active, .gnb_mob .wrap_menus.on .area_menu .depth03 .depth03_item:focus, .gnb_mob .wrap_menus.on .area_menu .depth03 .depth03_item:hover {
+  color: #fff;
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}

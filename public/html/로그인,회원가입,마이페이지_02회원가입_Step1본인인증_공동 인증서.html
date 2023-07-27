@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>디지털서비스 개방</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fontset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper">
+        <header id="header" class="header"></header>
+
+            <!-- 본문 외부 영역 -->
+            <section id="content" class="section join">
+                <!-- <h2 class="section_title sr_only">로그인</h2> -->
+                <!-- 본문  -->
+                <article class="page page_join_regist">
+                    <!-- 페이지 제목 -->
+                    <h2 class="page_title">회원등록</h2>
+
+                    <div class="page_content">
+
+                        <div class="box_progressbar">
+                            <ul class="progressbar_list">
+                                <li class="progressbar_item step_01 on"><p>STEP 01<br>본인인증</p></li>
+                                <li class="progressbar_item step_02"><p>STEP 02<br>약관동의</p></li>
+                                <li class="progressbar_item step_03"><p>STEP 03<br>정보확인</p></li>
+                                <li class="progressbar_item step_04"><p>STEP 04<br>등록완료</p></li>
+                            </ul>
+                        </div>
+
+                        <div class="wrap_type_login wrap_tabs">
+                            <ul class="tab_btn_list">
+                                <li class="tab_btn_item on">공동인증서</li>
+                                <!-- <li class="tab_btn_item on"><button class="tab_btn_anchor">공동인증서</button></li> -->
+                            </ul>
+
+                            <!-- 공동인증서 -->
+                            <div class="type_certificate tab_contents on">
+                                <article class="wrap_box">
+                                    <h3 class="box_msg"><em>공동인증서</em>를 등록해 주세요.</h3>
+                                    <p class="box_msg_sub">미리 등록된 담당자만 회원 인증이 가능합니다.
+                                        <br> 반드시 관리자에게 등록 여부를 확인해 주세요.</p>
+                                    <fieldset>
+                                        <legend class="sr_only">공동인증서등록</legend>
+                                        <div class="box_input">
+                                            <label for="">성명</label>
+                                            <input type="text" id="" name="" placeholder="사전 등록된 사용자의 성명을 입력해 주세요." autofocus>
+                                            <!-- <div class="msg_err">성명을 입력해 주세요.</div> -->
+                                            <div class="msg_err">회원정보가 존재하지 않습니다. 올바르게 입력했는지 확인해 주세요. 올바르게 입력했는데 문제가 지속된다면, 소속기관의 관리자에게 회원 정보에 대해 문의해 주세요.</div>
+                                        </div>
+                                        <!-- <div class="box_input">
+                                        <label for="">휴대전화</label>
+                                        <input type="tel" id="" name="" placeholder="사전 등록된 사용자의 휴대전화 번호를 입력해 주세요.">
+                                        <div class="msg_err">사전 등록된 사용자의 휴대전화 번호를 입력해 주세요.</div>
+                                    </div> -->
+                                        <div class="box_input">
+                                            <label for="">회원KEY</label>
+                                            <input type="text" id="" name="" placeholder="발급받은 회원KEY(20자리)를 입력해 주세요.">
+                                            <!-- <div class="msg_err">올바르지 않은 형식입니다. 회원KEY를 확인해 주세요.</div> -->
+                                            <div class="msg_err">회원KEY 형식이 올바르지 않습니다</div>
+                                        </div>
+                                    </fieldset>
+                                    <div class="wrap_btns">
+                                        <a href="javascript:;" target="_self" class="btn_submit filled_blue">인증하기</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!-- 본문 외부 영역 end  -->
+
+        <footer id="footer" class="footer"></footer>
+    </div>
+    <!-- wrapper end -->
+</body>
+
+</html>

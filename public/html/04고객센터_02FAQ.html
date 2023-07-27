@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>디지털서비스 개방</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fontset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper">
+        <header id="header" class="header"></header>
+
+        <!-- 브레드크럼 -->
+        <div class="wrap_breadcrumb">
+            <ol class="breadcrumb">
+                <li class="cat_home"><a href="00메인.html" class="home" title="메인화면으로 이동"></a></li>
+                <li class="cat_depth01">
+                    <a href="javascript:;" class="cat_title cat_depth01_title current">서비스</a>
+                    <ul class="cat_sub_menu">
+                        <li class="cat_sub_item"><a href="01소개_01디지털서비스 개방 소개.html" target="_self" class="cat_sub_anchor">소개</a></li>
+                        <li class="cat_sub_item"><a href="02서비스_01SRT승차권 예약.html" target="_self" class="cat_sub_anchor">서비스</a></li>
+                        <li class="cat_sub_item"><a href="03API_01표준 API.html" target="_self" class="cat_sub_anchor">API</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_01공지사항.html" target="_self" class="cat_sub_anchor">고객센터</a></li>
+                        <li class="cat_sub_item"><a href="로그인,회원가입,마이페이지_03마이페이지.html" target="_self" class="cat_sub_anchor">마이페이지</a></li>
+                    </ul>
+                </li>
+                <li class="cat_depth02">
+                    <a href="javascript:;" class="cat_title cat_depth02_title current">FAQ</a>
+                    <ul class="cat_sub_menu">
+                        <li class="cat_sub_item"><a href="04고객센터_01공지사항.html" target="_self" class="cat_sub_anchor">공지사항</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_02FAQ.html" target="_self" class="cat_sub_anchor">FAQ</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_03Q_A.html" target="_self" class="cat_sub_anchor">Q&A</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_04자료실.html" target="_self" class="cat_sub_anchor">자료실</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_05서비스개선요청.html" target="_self" class="cat_sub_anchor">서비스개선요청</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- 카테고리 타이틀 -->
+        <section class="section_title customer">
+            <h2>고객센터</h2>
+        </section>
+
+        <!-- 메인  -->
+        <main class="main">
+
+            <!-- 좌측 사이드 메뉴 -->
+            <aside id="sidemenu" class="aside">
+                <div class="inner_aside">
+                    <h3 class="side_title">고객센터</h3>
+                    <nav class="aside_lnb">
+                        <h2 class="sr_only">서브메뉴</h2>
+                        <div class="depth depth01">
+                            <ul class="depth_list depth01_list">
+                                <li class="depth01_item"><a href="04고객센터_01공지사항.html" target="_self" class="depth_text depth01_text">공지사항</a></li>
+                                <li class="depth01_item"><a href="04고객센터_02FAQ.html" target="_self" class="depth_text depth01_text currently">FAQ</a></li>
+                                <li class="depth01_item"><a href="04고객센터_03Q_A.html" target="_self" class="depth_text depth01_text">Q&A</a></li>
+                                <li class="depth01_item"><a href="04고객센터_04자료실.html" target="_self" class="depth_text depth01_text">자료실</a></li>
+                                <li class="depth01_item"><a href="04고객센터_05서비스개선요청.html" target="_self" class="depth_text depth01_text">서비스개선요청</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </aside>
+            <!-- 본문 외부 영역 -->
+            <section id="content" class="section customer">
+                <!-- 본문 -->
+                <article class="page page_faq">
+
+                    <h2 class="page_title page_title_list">FAQ</h2>
+
+                    <div class="page_content">
+
+                        <div class="area_search_bar">
+                            <div class="box_search_combo">
+                                <select class="search_select">
+                                    <option value="">전체</option>
+                                    <option value="">제목</option>
+                                    <option value="">내용</option>
+                                    <option value="">제목 + 내용</option>
+                                </select>
+                                <input type="text" placeholder="검색어를 입력해 주세요." value="" class="search_combo_input">
+                                <button type="submit" class="search_combo_btn btn_search">검색</button>
+                            </div>
+                        </div>
+
+                        <div class="area_table_top">
+                            <small>총 게시물 : <b>123</b>건</small>
+                        </div>
+
+                        <div class="wrap_faq_list">
+                            <ul class="faq_list">
+                                <li class="faq_item">
+                                <li class="wrap_accodian_item">
+                                    <a href="javascript:;" role="button" class="accodian_item">
+                                        <div class="accodian_tit">
+                                            <div class="accodian_mark"><span>Q</span></div>
+                                            <div class="box_txt">
+                                                <span class="badge lined category">웹사이트</span>
+                                                <p>질문 질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문</p>
+                                            </div>
+                                        </div>
+                                        <div class="accodian_cnt">
+                                            <div class="accodian_mark"><span>A</span></div>
+                                            <div class="box_txt">
+                                                <p>해당 API 상세 페이지 “오픈 API 정보”에 표시가 되어있으니 참고하여 이용바랍니다. 이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- <li class="faq_item">
+                                    <li class="wrap_accodian_item">
+<a href="javascript:;" role="button" class="accodian_item">
+                                        <div class="accodian_tit">
+                                            <div class="accodian_mark"><span>Q</span></div>
+                                            <div class="box_txt">
+                                                <span class="badge lined category">웹사이트</span>
+                                                <p>질문 질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문질문</p>
+                                            </div>
+                                        </div>
+                                        <div class="accodian_cnt">
+                                            <div class="accodian_mark"><span>A</span></div>
+                                            <div class="box_txt">
+                                                <p>해당 API 상세 페이지 “오픈 API 정보”에 표시가 되어있으니 참고하여 이용바랍니다. 이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다이용바랍니다</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li> -->
+                                <li class="faq_item">
+                                <li class="wrap_accodian_item">
+                                    <a href="javascript:;" role="button" class="accodian_item">
+                                        <div class="accodian_tit">
+                                            <div class="accodian_mark"><span>Q</span></div>
+                                            <div class="box_txt">
+                                                <span class="badge lined category">웹사이트</span>
+                                                <p>질문내용</p>
+                                            </div>
+                                        </div>
+                                        <div class="accodian_cnt">
+                                            <div class="accodian_mark"><span>A</span></div>
+                                            <div class="box_txt">
+                                                <p>답변내용</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="faq_item">
+                                <li class="wrap_accodian_item">
+                                    <a href="javascript:;" role="button" class="accodian_item">
+                                        <div class="accodian_tit">
+                                            <div class="accodian_mark"><span>Q</span></div>
+                                            <div class="box_txt">
+                                                <span class="badge lined category">웹사이트</span>
+                                                <p>트래픽을 늘리고 싶어요.</p>
+                                            </div>
+                                        </div>
+                                        <div class="accodian_cnt">
+                                            <div class="accodian_mark"><span>A</span></div>
+                                            <div class="box_txt">
+                                                <p>해당 API 상세 페이지 “오픈 API 정보”에 표시가 되어있으니 참고하여 이용바랍니다.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="faq_item">
+                                <li class="wrap_accodian_item">
+                                    <a href="javascript:;" role="button" class="accodian_item">
+                                        <div class="accodian_tit">
+                                            <div class="accodian_mark"><span>Q</span></div>
+                                            <div class="box_txt">
+                                                <span class="badge lined category">모바일 앱</span>
+                                                <p>비용이 부과되나요?</p>
+                                            </div>
+                                        </div>
+                                        <div class="accodian_cnt">
+                                            <div class="accodian_mark"><span>A</span></div>
+                                            <div class="box_txt">
+                                                <p>답변내용</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="faq_item">
+                                <li class="wrap_accodian_item">
+                                    <a href="javascript:;" role="button" class="accodian_item">
+                                        <div class="accodian_tit">
+                                            <div class="accodian_mark"><span>Q</span></div>
+                                            <div class="box_txt">
+                                                <span class="badge lined category">웹사이트</span>
+                                                <p>비용이 부과되나요?</p>
+                                            </div>
+                                        </div>
+                                        <div class="accodian_cnt">
+                                            <div class="accodian_mark"><span>A</span></div>
+                                            <div class="box_txt">
+                                                <p>답변내용</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="faq_item">
+                                <li class="wrap_accodian_item">
+                                    <a href="javascript:;" role="button" class="accodian_item">
+                                        <div class="accodian_tit">
+                                            <div class="accodian_mark"><span>Q</span></div>
+                                            <div class="box_txt">
+                                                <span class="badge lined category">운영</span>
+                                                <p>API 적용이 되질 않습니다.</p>
+                                            </div>
+                                        </div>
+                                        <div class="accodian_cnt">
+                                            <div class="accodian_mark"><span>A</span></div>
+                                            <div class="box_txt">
+                                                <p>답변내용</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="faq_item">
+                                <li class="wrap_accodian_item">
+                                    <a href="javascript:;" role="button" class="accodian_item">
+                                        <div class="accodian_tit">
+                                            <div class="accodian_mark"><span>Q</span></div>
+                                            <div class="box_txt">
+                                                <span class="badge lined category">기타</span>
+                                                <p>데이터 포맷은 어디에서 확인하나요?</p>
+                                            </div>
+                                        </div>
+                                        <div class="accodian_cnt">
+                                            <div class="accodian_mark"><span>A</span></div>
+                                            <div class="box_txt">
+                                                <p>답변내용</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="faq_item">
+                                <li class="wrap_accodian_item">
+                                    <a href="javascript:;" role="button" class="accodian_item">
+                                        <div class="accodian_tit">
+                                            <div class="accodian_mark"><span>Q</span></div>
+                                            <div class="box_txt">
+                                                <span class="badge lined category">웹사이트</span>
+                                                <p>서비스 키 오류 안내</p>
+                                            </div>
+                                        </div>
+                                        <div class="accodian_cnt">
+                                            <div class="accodian_mark"><span>A</span></div>
+                                            <div class="box_txt">
+                                                <p>답변내용</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <!-- pagenation -->
+                    <div class="wrap_pagenation">
+                        <ul class="pagenation">
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor first"><span class="sr_only">처음 페이지</span></a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor prev"><span class="sr_only">이전 페이지</span></a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor currently">1</a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">2</a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">3</a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">4</a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">5</a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor next"><span class="sr_only">다음 페이지</span></a></li>
+                            <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor last"><span class="sr_only">마지막 페이지</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- pagenation end -->
+
+                </article>
+                <!-- 본문 end  -->
+            </section>
+            <!-- 본문 외부 영역 end-->
+        </main>
+        <!-- 전체 영역 end  -->
+
+        <footer id="footer" class="footer"></footer>
+
+    </div>
+
+</body>
+
+</html>

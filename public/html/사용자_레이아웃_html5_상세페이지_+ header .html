@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>디지털서비스 개방</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" href="../css/fontset.css" />
+    <!-- font size rem 적용  -->
+    <link rel="stylesheet" href="../css/base.css" />
+    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+    <!-- res 적용된 layout  -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- style 삭제예정?  -->
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <!-- <link rel="stylesheet" href="../css/style_res.css" /> -->
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper">
+
+        <!-- 헤더 영역 pc -->
+        <!-- <header id="header" class="header gnb_user gnb_top"> -->
+        <header id="header" class="header gnb_user gnb_right">
+            <!-- <div class="accessibility">
+                <a href="#contents">본문 바로가기</a>
+            </div> -->
+            <!-- <div class="skip"><a href="#content">본문 바로가기</a></div> -->
+
+            <div class="wrap_gnb">
+                <!-- 최상단 고정 () 로그인 화면크기 조절 버튼 ) -->
+                <div class="area_top gnb_top">
+                    <div class="inner">
+                        <ul>
+                            <li class="depth02_item"><a href="javascript:;" target="_self" class="">로그인</a></li>
+                            <li class="depth02_item"><a href="javascript:;" target="_self" class="">회원가입</a></li>
+                            <!-- <li class="box_zoom"> -->
+                            <li class="depth02 box_zoom">
+                                <span>화면크기</span>
+                                <!-- <span class="element_zoom"> -->
+                                <!-- <span class="btn_zoom out"><a href="#" onclick="javascript:zoomControl.zoomOut()"><span class="hidden">화면축소</span></a></span>
+                                <span class="zoom-text"><a href="#" title="화면확대축소 초기화" onclick="javascript:zoomControl.zoomReset()">100%</a></span>
+                                <span class="btn_zoom in"><a href="#" onclick="javascript:zoomControl.zoomIn()"><span class="hidden">화면확대</span></a></span> -->
+                                <!-- </span> -->
+
+                                <button title="화면확대" onclick="javascript:zoomControl.zoomIn()" class="btn_zoom_in"></button>
+                                <button title="화면축소" onclick="javascript:zoomControl.zoomOut()" class="btn_zoom_out"></button>
+                                <button title="화면크기 초기화" onclick="javascript:zoomControl.zoomReset()" class="btn_zoom_reset"></button>
+
+                                <!-- <a href="javascript:;" title="화면확대" class="btn_zoom in"></a>
+                                <a href="javascript:;" title="화면축소" class="btn_zoom out"></a>
+                                <a href="javascript:;" title="화면크기 초기화" class="btn_zoom reset"></a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="gnbb dropdown area_menu LNB">
+                    <!--    <div class="wrap_mob_top">
+                        <h1 class="logo">
+                            <a href="javascript:;" target="_self" class="logo_anchor">
+                                <img src="../../public/img/logo/logo_big.png" alt="디지털서비스 개방 로고">
+                            </a>
+                        </h1>
+                        <div class="items">
+                            <div class="item box_btn">
+                                <a href="javascript:;" class="btn_search" title="전체 검색창 열기 버튼"></a>
+                            </div>
+                            <div class="item box_btn">
+                                <a href="javascript:;" class="btn_ghost" title="하위 메뉴 열기 버튼"></a>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                    <div class="group_menu">
+                        <!-- <div class="group_menu group_menu"> -->
+                        <!-- <div class="group_menu on"> -->
+                        <!-- <div class=" group_menu clearfix"> -->
+
+                        <ul class="menu_dropdown group_menu open">
+                            <!-- <ul class="group_menu"> -->
+                            <li class="depth01">
+                                <!-- <li class="depth01 same_position"> -->
+                                <div class="depth01_item">
+                                    <!--  모바일 반응형 대응 
+                                        <a href="javascript:;" target="_self" class="">
+                                        <h2>소개</h2>
+                                        <div class="btn_plus"><i class="btn_plus_icon"></i></div>
+                                    </a> -->
+                                    <a href="javascript:;" target="_self" class="">소개</a>
+                                </div>
+                                <ul class="depth02">
+                                    <li class="depth02_item">
+                                        <a href="javascript:;" target="_self" class="">
+
+                                            <!-- <div class="depth02 same_position">
+                                    <ul class="depth02_heigh_option_here">
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">디지털서비스 개방이란?</a></li>
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">이용 안내 및 절차</a></li>
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">적용사례</a></li>
+                                    </ul>
+                                </div> -->
+                                    </li>
+                                    <li class="depth02_item"><a href="javascript:;" target="_self" class="">디지털서비스 개방이란?</a></li>
+                                    <li class="depth02_item"><a href="javascript:;" target="_self" class="">이용 안내 및 절차</a></li>
+                                    <li class="depth02_item"><a href="javascript:;" target="_self" class="">적용사례</a></li>
+                                </ul>
+                            <li class="depth01">
+                                <div class="depth01_item"><a href="javascript:;" target="_self" class="">서비스</a></div>
+                                <!-- <div class="wrap_depth02"> -->
+                                <ul class="depth02">
+                                    <li class="depth02_item">
+                                        <a href="javascript:;" target="_self" class="">
+                                            <!-- <h3>SRT승차권 예약</h3> -->
+                                            SRT승차권 예약
+                                            <!-- <div class="btn_plus"><i class="btn_plus_icon"></i></div> -->
+                                        </a>
+                                        <!-- <div class="depth3">
+                                                <ul>
+                                                    <li class="depth03_item">
+                                                        <a href="javascript:;" target="_self" class="">
+                                                        <h4>- 예약</h4>
+                                                        </a>
+                                                    </li>
+                                                    <li class="depth03_item">
+                                                        <a href="javascript:;" target="_self" class="">
+                                                        <h4>- 결제</h4>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div> -->
+                                    </li>
+                                    <li class="depth02_item"><a href="javascript:;" target="_self" class="">국립수목원 예약</a></li>
+                                    <li class="depth02_item"><a href="javascript:;" target="_self" class="">백두대간·세종수목원 예약</a></li>
+                                    <li class="depth02_item"><a href="javascript:;" target="_self" class="">휴양림 예약</a></li>
+                                    <li class="depth02_item"><a href="javascript:;" target="_self" class="">자동차검사 예약</a></li>
+                                    <li class="depth02_item"><a href="javascript:;" target="_self" class="">문화누리카드 발급신청</a></li>
+                                    <li class="depth02_item"><a href="javascript:;" target="_self" class="">공항 내 소요시간 안내(Home to Airport)</a></li>
+                                </ul>
+                                <!-- </div> -->
+                            </li>
+                            <li class="depth01">
+                                <div class="depth01_item"><a href="javascript:;" target="_self" class="">API</a></div>
+                                <div class="wrap_depth02">
+                                    <ul class="depth02">
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">SRT승차권 예약</a></li>
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">국립수목원 예약</a></li>
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">백두대간·세종수목원 예약</a></li>
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">휴양림 예약</a></li>
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">자동차검사 예약</a></li>
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">문화누리카드 발급신청</a></li>
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">공항 내 소요시간 안내(Home to Airport)</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth01">
+                                <div class="depth01_item"><a href="javascript:;" target="_self" class="">고객센터</a></div>
+                                <div class="wrap_depth02">
+                                    <ul class="depth02">
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">공지사항</a></li>
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">FAQ</a></li>
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">Q&A</a></li>
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">자료실</a></li>
+                                        <li class="depth02_item"><a href="javascript:;" target="_self" class="">서비스개선요청</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="group_dropdown">
+                        <!-- <div class="group_menu group_dropdown"> -->
+                        <!-- <ul class="menu_dropdown menu_search_open"> -->
+                        <div class="menu_dropdown menu_search_open">
+                            <!-- <li> -->
+                            <!-- <input type="text" placeholder="검색어를 입력 해주세요."> -->
+
+
+                            <input type="hidden" name="collection_top" value="ALL" />
+
+                            <fieldset class="fieldset_search box_search">
+                                <legend>검색</legend>
+                                <!-- <input type="search" name="query" id="query" class="search_input" title="검색어" placeholder="검색어를 입력 해주세요."> -->
+                                <input type="search" name="query" id="query" class="search_input" placeholder="검색어를 입력 해주세요.">
+                                <button type="submit" class="btn_search btn_submit_search" title="검색"></button>
+                            </fieldset>
+
+                            <!-- </li> -->
+                        </div>
+                        <!-- </ul> -->
+                    </div>
+
+                    <div class="group_dropdown">
+                        <ul class="menu_dropdown menu_ghost_open"></ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+        <!-- 헤더 영역 pc end-->
+
+
+
+        <!-- 브레드크럼 -->
+        <div class="wrap_breadcrumb">
+            <ol class="breadcrumb">
+                <li class="cat_home"><a href="main.html" class="home" title="메인화면으로 이동"></a></li>
+                <li class="cat_depth01">
+                    <a href="javascript:;" class="cat_title cat_depth01_title current">소개</a>
+                    <ul class="cat_sub_menu">
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">소개</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">서비스</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">API</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">고객센터</a></li>
+                    </ul>
+                </li>
+                <li class="cat_depth02">
+                    <a href="javascript:;" class="cat_title cat_depth02_title current">디지털서비스 개방이란?</a>
+                    <ul class="cat_sub_menu">
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">디지털서비스 개방이란?</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">이용 안내 및 절차</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">적용사례</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="cat_depth02">
+                    <a href="javascript:;" class="cat_title cat_depth02_title current">SRT승차권 예약</a>
+                    <ul class="cat_sub_menu">
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">SRT승차권 예약</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">국립수목원 예약</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">백두대간·세종수목원 예약</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">휴양림 예약</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">자동차검사 예약</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">문화누리카드 발급신청</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">공항 내 소요시간 안내(Home to Airport)</a></li>
+                    </ul>
+								</li>
+                <li class="cat_depth02">
+                    <a href="javascript:;" class="cat_title cat_depth02_title current">공지사항</a>
+                    <ul class="cat_sub_menu">
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">공지사항</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">FAQ</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">Q&A</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">자료실</a></li>
+                        <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">서비스개선요청</a></li>
+                    </ul>
+                </li> -->
+            </ol>
+        </div>
+        
+
+
+        <!-- <div id="container" class="container"> -->
+
+        <!-- 메인  -->
+        <main class="main">
+
+            <!-- 좌측 사이드 메뉴 -->
+            <aside id="sidemenu" class="aside">
+                <!-- Navigation page left-->
+                <div class="inner_aside">
+                    <h2 class="side_title">
+                        1제목
+                        <!-- <span class="side_subject">2제목</span> -->
+                    </h2>
+                    <nav class="aside_lnb">
+                        <h2 class="sr_only">서브메뉴</h2>
+                        <div class="depth depth01">
+                            <ul class="depth_list depth01_list">
+                                <li class="depth01_item">
+                                    <a href="javascript:;" target="_self" class="depth_text depth01_text currently">공지사항</a>
+                                </li>
+                                <li class="depth01_item">
+                                    <a href="javascript:;" target="_self" class="depth_text depth01_text">FAQ</a>
+                                </li>
+                                <li class="depth01_item">
+                                    <a href="javascript:;" target="_self" class="depth_text depth01_text">Q&A</a>
+                                </li>
+                                <li class="depth01_item">
+                                    <a href="javascript:;" target="_self" class="depth_text depth01_text">자료실</a>
+                                </li>
+                                <li class="depth01_item">
+                                    <a href="javascript:;" target="_self" class="depth_text depth01_text">서비스개선요청</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </aside>
+            
+
+            <!-- 우측 사이드바 영역 aside quick -->
+            <!-- <aside class="aside"class="aside quick">
+											현재 없음
+                    </aside> -->
+            <!-- 우측 사이드바 영역 end -->
+
+            <!-- 본문 외부 영역 -->
+            <section class="section">
+                <!-- 	section 타이틀 영역  -->
+                <h2 class="section_title sr_only">안보이는 제목</h2>
+                <!-- 	section 타이틀 영역 end -->
+
+                <!-- section 내용 -->
+
+                <div class="contents">
+
+                    <!-- 본문 -->
+                    
+
+                        <!-- 브레드크럼(페이지 내부) 영역 -->
+
+                        <!-- 관리자 -->
+                        <!-- <div class="wrap_breadcrumb page_breadcrumb">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs_item"><a href="javascript:;"></a></li>
+                    <li class="breadcrumbs_item"><a href="javascript:;">고객센터</a></li>
+                    <li class="breadcrumbs_item"><a href="javascript:;">공지사항</a></li>i>
+                </ul>
+     
+            </div> -->
+
+                        <!--    사용자 상단 -->
+                        <!-- 
+   
+                <div class="wrap_breadcrumb page_breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="cat_home"><a href="main.html" class="home" title="메인화면으로 이동"></a></li>
+                        <li class="cat_depth01">
+                            <a href="javascript:;" class="cat_title cat_depth01_title current">소개</a>
+                            <ul class="cat_sub_menu">
+                                <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">소개</a></li>
+                                <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">서비스</a></li>
+                                <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">API</a></li>
+                                <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">고객센터</a></li>
+                            </ul>
+                        </li>
+                        <li class="cat_depth02">
+                            <a href="javascript:;" class="cat_title cat_depth02_title current">디지털서비스 개방이란?</a>
+                            <ul class="cat_sub_menu">
+                                <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">디지털서비스 개방이란?</a></li>
+                                <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">이용 안내 및 절차</a></li>
+                                <li class="cat_sub_item"><a href="javascript:;" target="_self" class="">적용사례</a></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div> -->
+                        <!-- 브레드크럼(페이지 내부) 영역 end -->
+
+                        
+                        <h2 class="page_title">공통분류코드 수정</h2>
+                        <!-- 	페이지 타이틀 영역 end -->
+
+                        <article class="area_search_filter">
+                            검색필터 영역
+                            <div class="wrap_box_search">
+                                <div class="box_search">
+
+                                </div>
+                            </div>
+
+
+
+
+                        </article>
+
+                        <div class="page_content">
+                            <!-- table -->
+                            <div class="wrap_table">
+                                <table class="table table_row">
+                                    <caption>공통분류코드 수정</caption>
+                                    <colgroup>
+                                        <col style="width:180px;">
+                                        <col style="width:auto; min-width: 300px;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">
+                                                <p class="asterisk">코드 ID</p>
+                                            </th>
+                                            <td>
+                                                <input type="text" placeholder="코드 ID를 입력해주세요." value="COM001">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <p class="asterisk">코드 명</p>
+                                            </th>
+                                            <td>
+                                                <input type="text" placeholder="코드 명을 입력해주세요." value="등록 구분">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <p>코드 설명</p>
+                                            </th>
+                                            <td>
+                                                <div class="wrap_textarea">
+                                                    <textarea name="" id="" placeholder="코드 설명을 입력해주세요.">
+등록을 구분합니다.
+                                                        </textarea>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">
+                                                <p class="asterisk">사용 여부</p>
+                                            </th>
+                                            <td>
+                                                <div class="wrap_radio">
+                                                    <div class="box_radio">
+                                                        <input type="radio" class="rdobtn" id="rd01" name="rdo-group01" checked="checked">
+                                                        <label for="rd01" class="label_txt">YES</label>
+                                                    </div>
+                                                    <div class="box_radio">
+                                                        <input type="radio" class="rdobtn" id="rd02" name="rdo-group01">
+                                                        <label for="rd02" class="label_txt">NO</label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- table end -->
+
+                            <!-- pagenation -->
+                            <div class="wrap_pagenation">
+                                <ul class="pagenation">
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor first"><span class="sr_only">처음 페이지</span></a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor prev"><span class="sr_only">이전 페이지</span></a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor currently">1</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">2</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">3</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">4</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">5</a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor next"><span class="sr_only">다음 페이지</span></a></li>
+                                    <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor last"><span class="sr_only">마지막 페이지</span></a></li>
+                                </ul>
+                            </div>
+                            <!-- pagenation end -->
+                        </div>
+                        
+
+                        <!-- 카테고리 사용 여부 'Y' && 카테고리 타입 '목록 타입' -->
+                        <!-- <fieldset>
+                            <legend>게시물 검색</legend>
+                            <div class="card card--bgcolor p-search">
+                                <div class="p-form-group">
+                                    <span class="p-form__split"></span>
+                                    <select id="sele_lab" name="searchCnd" class="p-input" title="검색영역선택">
+                                        <option value="SJ">제목
+                                        </option>
+                                        <option value="CN">내용
+                                        </option>
+                                    </select>
+
+                                    <span class="p-form__split"></span>
+                                    <input type="text" name="searchKrwd" id="ipt_lab" class="p-input p-input--beside" title="검색단어 입력" placeholder="검색단어 입력" value="" />
+
+                                    <span class="p-form-group__button">
+                                        <button type="submit" class="p-button">검색</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </fieldset> -->
+
+
+                    </article>
+                    <!-- 본문 내부 영역 (페이지) end -->
+                </div>
+
+            </section>
+            <!-- 본문 외부 영역 section end-->
+
+
+        </main>
+        <!-- 본문 전체 영역 main end -->
+        <!-- </div> -->
+            <!-- 푸터영역 -->
+    <footer id="footer" class="footer"></footer>
+    <!-- 푸터영역 end -->
+
+    </div>
+    <!-- wrapper end -->
+
+    <!-- <div id="screen"></div> -->
+
+
+    <script>
+        // 	(function($){
+        //   $.fn.dropdown = function(){
+        //     return this.each(function(){
+        //       var $gnb = $(this);
+        //       var $menu = $gnb.find(".menu");
+        //       var $depth01 = $gnb.find(".h");
+        //       var $depth02 = $gnb.find(".s");
+
+        //       $gnb.mouseenter(function(){
+        //         gnbOn();
+        //       }).mouseleave(function(){
+        //         gnbOff();
+        //       });
+
+        //       $gnb.find("a").focusin(function(){
+        //         gnbOn();
+        //       }).focusout(function(){
+        //         gnbOff();
+        //       });
+
+        //       function gnbOn(){
+        //         $gnb.find($depth02).stop().animate({height: "100%"});
+        //       }
+
+        //       function gnbOff(){
+        //         $gnb.find($depth02).stop().animate({height: "0"});
+        //       }
+
+        //     });
+        //   }
+        // })(jQuery);
+
+        // $(function(){
+        //   $(".dropdown").dropdown();
+        // });     
+
+        $(document).ready(function() {
+
+
+        });
+
+        /** 화면크기 조절 */
+        var nowZoom = 100;
+        var zoomControl = {
+            zoomOut: function() {
+                nowZoom = nowZoom - 5;
+                if (nowZoom <= 90) nowZoom = 90;
+                zoomControl.zooms();
+                $('.zoom-text> a').text(nowZoom + '%')
+            },
+            zoomIn: function() {
+                nowZoom = nowZoom + 5;
+                if (nowZoom >= 120) nowZoom = 120;
+                zoomControl.zooms();
+                $('.zoom-text > a').text(nowZoom + '%')
+            },
+            zoomReset: function() {
+                nowZoom = 100;
+                zoomControl.zooms();
+                $('.zoom-text > a').text(nowZoom + '%')
+            },
+            zooms: function() {
+                var aUserAgent = navigator.userAgent.toLowerCase();
+
+                if (aUserAgent.indexOf("firefox") >= 0) {
+                    $('body').css('-moz-transform', 'scale(' + nowZoom + '%)');
+                    $('body').css('-moz-transform-origin', '0 0');
+                } else {
+                    document.body.style.zoom = nowZoom + "%";
+                }
+
+                if (nowZoom == 90) {
+                    alert("더 이상 축소할 수 없습니다.");
+                }
+                if (nowZoom == 120) {
+                    alert("더 이상 확대할 수 없습니다.");
+                }
+            }
+        }
+
+        // function menuOn() {
+        //   //   var contTitle = $(".title-area .bread-crumbs ul li:first-child a").text();
+
+
+        //     var contTitle = $(".sub-gnb .menu > li:nth-of-type(2) > a").text();
+        //     console.log(contTitle);
+
+        //     $(".gnb-menu > ul > li > a").each(function () {
+        //       var leftmenuText = $(this).text();
+        //       console.log(leftmenuText);
+        //       // console.log(contTitle);
+        //       if (contTitle == leftmenuText) {
+        //         $(this).parent().addClass("view");
+        //         $(this).parent().parent().parent().parent().addClass("view");
+        //         $(this).addClass("current");
+        //       }
+        //     });
+
+
+
+
+
+        // // dsl
+        /**  header event */
+
+        // $(document).ready(function () {
+        //   $("header").html(nav);
+        //   if (w769.matches) {
+        //     $("header .nav").removeClass("gnb-st");
+        //     $("header .nav").addClass("lnb-st");
+        //   } else {
+        //     $("header .nav").removeClass("lnb-st");
+        //     $("header .nav").addClass("gnb-st");
+        //     gnbState();
+        //   }
+
+        //   // ipad 터치 메뉴 open ( nav.gnb-st )
+        //   $(".nav.gnb-st .area-menu > ul li.depth01 > a ").on("touchend", function (e) {
+        //     e.stopPropagation();
+        //     $(".nav.gnb-st").toggleClass("on");
+        //   });
+
+        //   //  ipad 터치 submenu 외 영역 터치 시 메뉴 닫기
+        //   $("html").on("touchend", function (e) {
+        //     if (
+        //       !$(e.target).is(".nav.gnb-st .area-menu > ul li.depth01") &&
+        //       !$(e.target).is(".nav.gnb-st .area-menu > ul li.depth01 a")
+        //     ) {
+        //       // console.log("submenu 외");
+        //       e.stopPropagation();
+        //       $(".nav.gnb-st").removeClass("on");
+        //     }
+        //   });
+
+        //   //본문바로가기
+        //   $("header .skip a").on("focus", function () {
+        //     $(this).parent().stop().css({top: 0});
+        //   });
+        //   $("header .skip a").on("click", function () {
+        //     $(this).parent().stop().animate({top: "-60px"});
+        //   });
+        //   $("header .skip a").on("focusout", function () {
+        //     $(this).parent().stop().animate({top: "-60px"});
+        //   });
+
+        // });
+
+        // $(window).on("resize", function () {
+        //   // console.log('resize event!');
+        //   //   if (window.innerWidth <= 800) {
+        //   //     alert('현재 브라우저 크기 = 800px');
+        //   //   }
+        //   if (w769.matches) {
+        //     $("header .nav").removeClass("gnb-st");
+        //     $("header .nav").addClass("lnb-st");
+        //   } else {
+        //     $("header .nav").removeClass("lnb-st");
+        //     $("header .nav").addClass("gnb-st");
+        //   }
+
+        //   $("body").css("overflow", "unset");
+        //   $("header .hamburger").removeClass("is-active");
+        //   $(".nav.lnb-st").removeClass("on");
+        //   $("header .nav-mask").removeClass("on");
+        // });
+
+        //         /** nav-mask 클릭 이벤트 - dim 클릭 시 submenu 닫기 */
+        //         $(document).on("click", "header .nav-mask", function () {
+        //         $("body").css("overflow", "unset");
+        //         $("header .hamburger").removeClass("is-active");
+        //         $(".nav.lnb-st").removeClass("on");
+        //         $("header .nav-mask").removeClass("on");
+        //         });
+
+        //         /** sub-gnb의 text 동일 할 때 header 메뉴명 하단 상태 활성화 표시  */
+        //         // - x - > // header .area-menu > ul li.depth01:hover > a > h3::before & .depth01.on css 중복으로 작동 됨
+        //         function gnbState() {
+        //         var subGnbTitle = $(".sub-gnb .menu > li:nth-child(2) > a").text();
+        //         // console.log(subGnbTitle);
+
+        //         $(".gnb-st .area-menu > ul li.depth01 > a > h3").each(function () {
+        //             var gnbText = $(this).text();
+        //             // console.log("gnbText");
+        //             if (subGnbTitle == gnbText) {
+        //             // console.log("same");
+        //             $(this).closest(".depth01").addClass("on");
+        //             }
+        //         });
+        //         }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>디지털서비스 개방</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fontset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper">
+        <header id="header" class="header"></header>
+
+        <!-- 브레드크럼 -->
+        <div class="wrap_breadcrumb">
+            <ol class="breadcrumb">
+                <li class="cat_home"><a href="00메인.html" class="home" title="메인화면으로 이동"></a></li>
+                <li class="cat_depth01">
+                    <a href="javascript:;" class="cat_title cat_depth01_title current">서비스</a>
+					<ul class="cat_sub_menu">
+						<li class="cat_sub_item"><a href="01소개_01디지털서비스 개방 소개.html" target="_self" class="cat_sub_anchor">소개</a></li>
+						<li class="cat_sub_item"><a href="02서비스_01SRT승차권 예약.html" target="_self" class="cat_sub_anchor">서비스</a></li>
+						<li class="cat_sub_item"><a href="03API_01표준 API.html" target="_self" class="cat_sub_anchor">API</a></li>
+						<li class="cat_sub_item"><a href="04고객센터_01공지사항.html" target="_self" class="cat_sub_anchor">고객센터</a></li>
+						<li class="cat_sub_item"><a href="로그인,회원가입,마이페이지_03마이페이지.html" target="_self" class="cat_sub_anchor">마이페이지</a></li>
+					</ul>
+                </li>
+                <li class="cat_depth02">
+                    <a href="javascript:;" class="cat_title cat_depth02_title current">자료실</a>
+                    <ul class="cat_sub_menu">
+                        <li class="cat_sub_item"><a href="04고객센터_01공지사항.html" target="_self" class="cat_sub_anchor">공지사항</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_02FAQ.html" target="_self" class="cat_sub_anchor">FAQ</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_03Q_A.html" target="_self" class="cat_sub_anchor">Q&A</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_04자료실.html" target="_self" class="cat_sub_anchor">자료실</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_05서비스개선요청.html" target="_self" class="cat_sub_anchor">서비스개선요청</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- 카테고리 타이틀 -->
+        <section class="section_title customer">
+            <h2>고객센터</h2>
+        </section>
+
+        <!-- 메인  -->
+        <main class="main">
+
+            <!-- 좌측 사이드 메뉴 -->
+            <aside id="sidemenu" class="aside">
+                <div class="inner_aside">
+                    <h3 class="side_title">고객센터</h3>
+                    <nav class="aside_lnb">
+                        <h2 class="sr_only">서브메뉴</h2>
+                        <div class="depth depth01">
+                            <ul class="depth_list depth01_list">
+                                <li class="depth01_item"><a href="04고객센터_01공지사항.html" target="_self" class="depth_text depth01_text">공지사항</a></li>
+                                <li class="depth01_item"><a href="04고객센터_02FAQ.html" target="_self" class="depth_text depth01_text">FAQ</a></li>
+                                <li class="depth01_item"><a href="04고객센터_03Q_A.html" target="_self" class="depth_text depth01_text">Q&A</a></li>
+                                <li class="depth01_item"><a href="04고객센터_04자료실.html" target="_self" class="depth_text depth01_text currently">자료실</a></li>
+                                <li class="depth01_item"><a href="04고객센터_05서비스개선요청.html" target="_self" class="depth_text depth01_text">서비스개선요청</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </aside>
+            <!-- 본문 외부 영역 -->
+            <section id="content" class="section customer">
+                <!-- <h2 class="section_title sr_only">제목</h2> -->
+                <!-- 본문 -->
+                <article class="page page_archive">
+                    <h2 class="page_title page_title_list">자료실</h2>
+
+                    <div class="page_content">
+
+                        <div class="area_search_bar">
+                            <div class="box_search_combo">
+                                <select class="search_select">
+                                    <option value="">전체</option>
+                                    <option value="">제목</option>
+                                    <option value="">내용</option>
+                                    <option value="">제목 + 내용</option>
+                                </select>
+                                <input type="text" placeholder="검색어를 입력해 주세요." value="" class="search_combo_input">
+                                <button type="submit" class="search_combo_btn btn_search">검색</button>
+                            </div>
+                        </div>
+
+                        <div class="area_table_top">
+                            <small>총 게시물 : <b>123</b>건</small>
+                        </div>
+                        <!-- table -->
+                        <div class="only_wide">
+                        <div class="wrap_table">
+                            <table class="table table_list">
+                                <caption>자료실 목록</caption>
+                                <colgroup>
+                                    <col style="width:80px;">
+                                    <col style="width:90px;">
+                                    <col style="width:auto;">
+                                    <col style="width:100px;">
+                                    <col style="width:40px;">
+                                    <col style="width:80px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">등록일</th>
+                                        <th scope="col">첨부</th>
+                                        <th scope="col">조회수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>10</td>
+                                        <td><span class="badge lined category">웹사이트</span></td>
+                                        <td>
+                                            <div class="post_title">
+                                                <div class="post_title_item">
+                                                    <a href="../../public/html/04고객센터_04자료실_01상세.html" target="_self" class="post_title_anchor">보안 방침 변경 공지 긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목긴제목</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2022-03-31</td>
+                                        <td><button type="submit" class="btn_attached_download icon_attached" aria-label="첨부파일 다운로드"></button></td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td><span class="badge lined category">웹사이트</span></td>
+                                        <td>
+                                            <div class="post_title">
+                                                <div class="post_title_item">
+                                                    <a href="javascript:;" target="_self" class="post_title_anchor">적용할 수 없다는 메시지가 뜹니다.</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2022-03-31</td>
+                                        <td>
+                                            <!-- <button type="submit" class="btn_attached_download icon_attached" aria-label="첨부파일 다운로드"></button> -->
+                                        </td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td><span class="badge lined category">운영</span></td>
+                                        <td>
+                                            <div class="post_title">
+                                                <div class="post_title_item">
+                                                    <a href="javascript:;" target="_self" class="post_title_anchor">통계 서비스 변경 공지</a>                                                
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2022-03-31</td>
+                                        <td><button type="submit" class="btn_attached_download icon_attached" aria-label="첨부파일 다운로드"></button></td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td><span class="badge lined category">웹사이트</span></td>
+                                        <td>
+                                            <div class="post_title">
+                                                <div class="post_title_item">
+                                                    <a href="javascript:;" target="_self" class="post_title_anchor">적용할 수 없다는 메시지가 뜹니다. 적용할 수 없다는 메시지가 뜹니다.</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2022-03-31</td>
+                                        <td><button type="submit" class="btn_attached_download icon_attached" aria-label="첨부파일 다운로드"></button></td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td><span class="badge lined category">모바일 앱</span></td>
+                                        <td>
+                                            <div class="post_title">
+                                                <div class="post_title_item">
+                                                    <a href="javascript:;" target="_self" class="post_title_anchor">적용할 수 없다는 메시지가 뜹니다. 적용할 수 없다는 메시지가 뜹니다.</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2022-03-31</td>
+                                        <td><button type="submit" class="btn_attached_download icon_attached" aria-label="첨부파일 다운로드"></button></td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td><span class="badge lined category">기타</span></td>
+                                        <td>
+                                            <div class="post_title">
+                                                <div class="post_title_item">
+                                                    <a href="javascript:;" target="_self" class="post_title_anchor">적용할 수 없다는 메시지가 뜹니다. 적용할 수 없다는 메시지가 뜹니다.</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2022-03-31</td>
+                                        <td><button type="submit" class="btn_attached_download icon_attached" aria-label="첨부파일 다운로드"></button></td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><span class="badge lined category">운영</span></td>
+                                        <td>
+                                            <div class="post_title">
+                                                <div class="post_title_item">
+                                                    <a href="javascript:;" target="_self" class="post_title_anchor">적용할 수 없다는 메시지가 뜹니다. 적용할 수 없다는 메시지가 뜹니다.</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2022-03-31</td>
+                                        <td><button type="submit" class="btn_attached_download icon_attached" aria-label="첨부파일 다운로드"></button></td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><span class="badge lined category">운영</span></td>
+                                        <td>
+                                            <div class="post_title">
+                                                <div class="post_title_item">
+                                                    <a href="javascript:;" target="_self" class="post_title_anchor">적용할 수 없다는 메시지가 뜹니다. 적용할 수 없다는 메시지가 뜹니다.</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2022-03-31</td>
+                                        <td><button type="submit" class="btn_attached_download icon_attached" aria-label="첨부파일 다운로드"></button></td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><span class="badge lined category">모바일 앱</span></td>
+                                        <td>
+                                            <div class="post_title">
+                                                <div class="post_title_item">
+                                                    <a href="javascript:;" target="_self" class="post_title_anchor">사용자 디렉토리 변경 공지</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2022-03-31</td>
+                                        <td><button type="submit" class="btn_attached_download icon_attached" aria-label="첨부파일 다운로드"></button></td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><span class="badge lined category">운영</span></td>
+                                        <td>
+                                            <div class="post_title">
+                                                <div class="post_title_item">
+                                                    <a href="javascript:;" target="_self" class="post_title_anchor">통계 서비스 변경 공지</a> 
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>2022-03-31</td>
+                                        <td><button type="submit" class="btn_attached_download icon_attached" aria-label="첨부파일 다운로드"></button></td>
+                                        <td>30</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        </div>
+                        <!-- table end -->
+
+                        <div class="only_mob">
+                            <div class="wrap_board_list">
+                                <ul class="board_list">
+                                    <li class="board_item">
+                                        <a href="04고객센터_04자료실_01상세.html" target="_self" class="board_anchor">
+                                            <div class="type_board_post">
+                                                <div class="post_num">
+                                                    <span>5</span>
+                                                </div>
+                                                <div class="board_cnt">
+                                                    <div class="board_category"><span class="badge lined category">웹사이트</span></div>
+                                                    <div class="post_title">
+                                                        <div class="post_title_item">
+                                                            <p class="post_title_anchor">API 사용 범위가 어디까지인지 궁금해요. 안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다안됩니다</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="post_date">2022-09-18</p>                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="board_item">
+                                        <a href="javascript:;" target="_self" class="board_anchor">
+                                            <div class="type_board_post">
+                                                <div class="post_num">
+                                                    <span>4</span>
+                                                </div>
+                                                <div class="board_cnt">
+                                                    <div class="board_category"><span class="badge lined category">모바일 앱</span></div>
+                                                    <div class="post_title">
+                                                        <div class="post_title_item">
+                                                            <p class="post_title_anchor">API 사용 범위가 어디까지인지 궁금해요.</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="post_date">2022-09-18</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="board_item">
+                                        <a href="javascript:;" target="_self" class="board_anchor">
+                                            <div class="type_board_post">
+                                                <div class="post_num">
+                                                    <span>3</span>
+                                                </div>
+                                                <div class="board_cnt">
+                                                    <div class="board_category"><span class="badge lined category">웹사이트</span></div>
+                                                    <div class="post_title">
+                                                        <div class="post_title_item">
+                                                            <p class="post_title_anchor">API 사용 범위가 어디까지인지 궁금해요.</p>                                                            
+                                                        </div>
+                                                    </div>
+                                                    <p class="post_date">2022-09-18</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="board_item">
+                                        <a href="javascript:;" target="_self" class="board_anchor">
+                                            <div class="type_board_post">
+                                                <div class="post_num">
+                                                    <span>2</span>
+                                                </div>
+                                                <div class="board_cnt">
+                                                    <div class="board_category"><span class="badge lined category">모바일 앱</span></div>
+                                                    <div class="post_title">
+                                                        <div class="post_title_item">
+                                                            <p class="post_title_anchor">API 사용 범위가 어디까지인지 궁금해요.</p>                                                            
+                                                        </div>
+                                                    </div>
+                                                    <p class="post_date">2022-09-18</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="board_item">
+                                        <a href="javascript:;" target="_self" class="board_anchor">
+                                            <div class="type_board_post">
+                                                <div class="post_num">
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="board_cnt">
+                                                    <div class="board_category"><span class="badge lined category">기타</span></div>
+                                                    <div class="post_title">
+                                                        <div class="post_title_item">
+                                                            <p class="post_title_anchor">API 사용 범위가 어디까지인지 궁금해요.</p>                                                                                                                        
+                                                        </div>
+                                                    </div>
+                                                    <p class="post_date">2022-09-18</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="board_item">
+                                        <a href="javascript:;" target="_self" class="board_anchor">
+                                            <div class="type_board_post">
+                                                <div class="post_num">
+                                                    <span>5</span>
+                                                </div>
+                                                <div class="board_cnt">
+                                                    <div class="board_category"><span class="badge lined category">웹사이트</span></div>
+                                                    <div class="post_title">
+                                                        <div class="post_title_item">
+                                                            <p class="post_title_anchor">회원 탈퇴가 안됩니다.</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="post_date">2022-09-18</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- pagenation -->
+                        <div class="wrap_pagenation">
+                            <ul class="pagenation">
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor first"><span class="sr_only">처음 페이지</span></a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor prev"><span class="sr_only">이전 페이지</span></a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor currently">1</a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">2</a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">3</a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">4</a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor">5</a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor next"><span class="sr_only">다음 페이지</span></a></li>
+                                <li class="pagenation_item"><a href="javascript:;" target="_self" class="pagenation_anchor last"><span class="sr_only">마지막 페이지</span></a></li>
+                            </ul>
+                        </div>
+                        <!-- pagenation end -->
+
+
+                    </div>
+
+                </article>
+                <!-- 본문 end  -->
+            </section>
+            <!-- 본문 외부 영역 end-->
+        </main>
+        <!-- 전체 영역 end  -->
+
+        <footer id="footer" class="footer"></footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>디지털서비스 개방</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fontset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper">
+        <header id="header" class="header"></header>
+
+        <!-- 본문 외부 영역 -->
+        <section id="content" class="section join terms">
+            <!-- <h2 class="section_title sr_only">로그인</h2> -->
+            <!-- 본문  -->
+            <article class="page page_join_terms">
+                <!-- 페이지 제목 -->
+                <h2 class="page_title">회원등록</h2>
+                <div class="page_content">
+                    <div class="box_progressbar">
+                        <ul class="progressbar_list">
+                            <li class="progressbar_item step_01"><p>STEP 01<br>본인인증</p></li>
+                            <li class="progressbar_item step_02 on"><p>STEP 02<br>약관동의</p></li>
+                            <li class="progressbar_item step_03"><p>STEP 03<br>정보확인</p></li>
+                            <li class="progressbar_item step_04"><p>STEP 04<br>등록완료</p></li>
+                        </ul>
+                    </div>
+
+                    <div class="page_sub_title">
+                        <h3>약관동의</h3>
+                    </div>
+
+                    <!-- 서비스 이용약관 -->
+                    <div class="group_agr terms">
+                        <div class="group_sub">
+                            <article class="wrap_terms">
+                                <div class="box_terms_title on">
+                                    <h3 class="terms_title"><em>개인정보 수집·이용</em>에 대한 동의 (필수)</h3>
+                                </div>
+                                <div class="box_terms on">
+                                <div class="box_txt" tabindex="0">
+                                    <article class="policy_detail">
+                                        <h3 class="policy_sub_tit">개인정보 수집 · 이용 동의서</h3>
+                                        <p>행정안전부에서는 디지털정부 서비스 개방 플랫폼 사용자(user)로 등록되기 위해서는 다음과 같은 개인정보 수집·이용에 동의하셔야 합니다. 내용을 신중히 검토하시고 동의 여부를 표시해 주시기 바랍니다.</p>
+                                        <p>▪ 수집·이용 목적, 수집하는 개인정보 항목, 보유 기간</p>
+                                            <div class="pl30">
+                                                <div class="wrap_table">
+                                                    <table class="table table_detail">
+                                                        <caption>▪ 수집·이용 목적, 수집하는 개인정보 항목, 보유 기간</caption>
+                                                        <colgroup>
+                                                            <col style="width: 33.33%">
+                                                            <col style="width: 33.33%">
+                                                            <col style="width: 33.33%">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">수집·이용 목적</th>
+                                                                <th scope="col">수집하는 개인정보 항목</th>
+                                                                <th scope="col">보유 기간</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>개방 플랫폼 사용자(user) 등록 및 연락</td>
+                                                                <td>
+                                                                    회원ID,<br>
+                                                                    회원명,<br>
+                                                                    소속기관명,<br>
+                                                                    부서명,<br>
+                                                                    사무실 전화번호,<br>
+                                                                    이동전화 번호,<br>
+                                                                    이메일,<br>
+                                                                    DN 또는 CI,<br>
+                                                                    가입일시,<br>
+                                                                    회원상태코드,<br>
+                                                                    사용여부,<br>
+                                                                    기관ID
+                                                                </td>
+                                                                <td>탈퇴 시까지</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p><small>* DN: 공동인증서 인증 결과값<br>
+                                                    CI(Connceting Information, 연계정보): 디지털원패스 인증 결과값</small></p>
+                                                <p>※ 귀하께서는 개인정보 수집·이용에 동의를 거부하실 수 있지만, 거부할 경우에는 개방 플랫폼 회원 가입 절차를 계속할 수 없습니다.</p>
+                                            </div>
+                                    </article>
+                                </div>
+
+                                </div>
+                                <div class="box_chk_agree">
+                                    <div class="box_input_chk">
+                                        <input type="radio" class="input_chk" id="temp01" name="group01">
+                                        <label for="temp01" class="input_chk_label">아니오, 동의하지 않습니다.</label>
+                                    </div>
+                                    <div class="box_input_chk">
+                                        <input type="radio" class="input_chk" id="temp02" name="group01">
+                                        <label for="temp02" class="input_chk_label">네, 동의합니다.</label>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="box_input_chk chk_all">
+                                <input type="checkbox" class="input_chk" id="temp03" name="group02">
+                                <label for="temp03" class="input_chk_label">모든 이용약관, 개인정보 수집·이용에 대한 안내를 읽었으며 모두 동의합니다.</label>
+                            </div>
+                        </div>
+                        <!-- 하단 버튼 영역 -->
+                        <div class="wrap_btns">
+                            <a href="javascript:;" target="_self" class="btn_submit filled_gray">동의하지 않음</a>
+                            <!-- 동의 미체크시 비활성화 -->
+                            <a href="javascript:;" target="_self" class="btn_submit filled_blue disabled">동의</a>
+                            <!-- <a href="javascript:;" target="_self" class="btn_submit filled_blue">동의</a> -->
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- 본문 외부 영역 end  -->
+
+        <footer id="footer" class="footer"></footer>
+    </div>
+    <!-- wrapper end -->
+</body>
+
+</html>

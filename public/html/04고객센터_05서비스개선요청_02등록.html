@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>디지털서비스 개방</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fontset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper">
+        <header id="header" class="header"></header>
+
+        <!-- 브레드크럼 -->
+        <div class="wrap_breadcrumb">
+            <ol class="breadcrumb">
+                <li class="cat_home"><a href="00메인.html" class="home" title="메인화면으로 이동"></a></li>
+                <li class="cat_depth01">
+                    <a href="javascript:;" class="cat_title cat_depth01_title current">고객센터</a>
+                    <ul class="cat_sub_menu">
+                        <li class="cat_sub_item"><a href="01소개_01디지털서비스 개방 소개.html" target="_self" class="cat_sub_anchor">소개</a></li>
+                        <li class="cat_sub_item"><a href="02서비스_01SRT승차권 예약.html" target="_self" class="cat_sub_anchor">서비스</a></li>
+                        <li class="cat_sub_item"><a href="03API_01표준 API.html" target="_self" class="cat_sub_anchor">API</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_01공지사항.html" target="_self" class="cat_sub_anchor">고객센터</a></li>
+                        <li class="cat_sub_item"><a href="로그인,회원가입,마이페이지_03마이페이지.html" target="_self" class="cat_sub_anchor">마이페이지</a></li>
+                    </ul>
+                </li>
+                <li class="cat_depth02">
+                    <a href="javascript:;" class="cat_title cat_depth02_title current">서비스개선요청</a>
+                    <ul class="cat_sub_menu">
+                        <li class="cat_sub_item"><a href="04고객센터_01공지사항.html" target="_self" class="cat_sub_anchor">공지사항</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_02FAQ.html" target="_self" class="cat_sub_anchor">FAQ</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_03Q_A.html" target="_self" class="cat_sub_anchor">Q&A</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_04자료실.html" target="_self" class="cat_sub_anchor">자료실</a></li>
+                        <li class="cat_sub_item"><a href="04고객센터_05서비스개선요청.html" target="_self" class="cat_sub_anchor">서비스개선요청</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- 카테고리 타이틀 -->
+        <section class="section_title customer">
+            <h2>고객센터</h2>
+        </section>
+
+        <!-- 메인  -->
+        <main class="main">
+
+            <!-- 좌측 사이드 메뉴 -->
+            <aside id="sidemenu" class="aside">
+                <div class="inner_aside">
+                    <h3 class="side_title">고객센터</h3>
+                    <nav class="aside_lnb">
+                        <h2 class="sr_only">서브메뉴</h2>
+                        <div class="depth depth01">
+                            <ul class="depth_list depth01_list">
+                                <li class="depth01_item"><a href="04고객센터_01공지사항.html" target="_self" class="depth_text depth01_text">공지사항</a></li>
+                                <li class="depth01_item"><a href="04고객센터_02FAQ.html" target="_self" class="depth_text depth01_text">FAQ</a></li>
+                                <li class="depth01_item"><a href="04고객센터_03Q_A.html" target="_self" class="depth_text depth01_text">Q&A</a></li>
+                                <li class="depth01_item"><a href="04고객센터_04자료실.html" target="_self" class="depth_text depth01_text">자료실</a></li>
+                                <li class="depth01_item"><a href="04고객센터_05서비스개선요청.html" target="_self" class="depth_text depth01_text currently">서비스개선요청</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- 본문 외부 영역 -->
+            <section id="content" class="section customer">
+                <!-- 본문 -->
+                <article class="page page_improve">
+
+                    <h2 class="page_title">서비스개선요청</h2>
+
+                    <div class="page_content">
+                        <!-- table -->
+                        <div class="wrap_table">
+                            <table class="table table_row">
+                                <caption>서비스개선요청 수정</caption>
+                                <colgroup>
+                                    <col style="width:180px;">
+                                    <col style="width:auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <p class="asterisk">분류</p>
+                                        </th>
+                                        <td>
+                                            <div class="box_select">
+                                                <select class="search_select">
+                                                    <option value="">웹 사이트</option>
+                                                    <option value="">모바일 앱</option>
+                                                    <option value="">운영</option>
+                                                    <option value="">기타</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <th scope="row">
+                                        <p class="asterisk">제목</p>
+                                    </th>
+                                    <td>
+                                        <div class="box_search">
+                                            <input type="text" placeholder="제목을 입력해주세요.">
+                                        </div>
+                                        <p class="note_bottom">(제목은 80자 이내로 작성해 주세요.)</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <p class="asterisk">내용</p>
+                                        </th>
+                                        <td>
+                                            <div class="wrap_textarea">
+                                                <textarea name="" id="" placeholder="내용을 입력해주세요."></textarea>
+                                            </div>
+                                            <p class="note_bottom">(본문은 2000자 이내로 작성해 주세요.)</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="wrap_select_file">
+                                        <th scope="row" rowspan="">
+                                            <p>첨부파일</p>
+                                        </th>
+                                        <td>
+                                            <div class="box_attached_file">
+                                                <input type="file" id="attachedFile" class="attached_file" value="파일선택" multiple />
+                                                <p class="attached_note">※ 첨부 파일 사이즈는 10MB 이내로 등록 가능합니다.</p>
+                                                <div class="attached_file_counter"><span>(</span><span class="attached_count">2</span>/10)</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <!-- 첨부파일 등록 시 attached_file_item 추가 -->
+                                    <!-- <tr class="wrap_file_viewer">
+											<td>
+													<div class="attached_file_viewer">
+															<ul class="attached_file_list">
+																	<li class="attached_file_item">
+																			<a href="javascript:;" target="_self" class="attached_anchor"><span>개인정보 입력 템플릿.hwp</span><span>(</span><span class="attached_size">4904</span><span>kb)</span></a>
+																			<button class="btn_attached_delete" title="첨부파일 삭제"></button>
+																	</li>
+															</ul>
+													</div>
+											</td>
+									</tr> -->
+                                    <tr>
+                                        <th scope="row">
+                                            <p>비밀글 설정</p>
+                                        </th>
+                                        <td>
+                                            <div class="box_input_chk">
+                                                <input type="checkbox" class="input_chk" id="group_temp01" name="group_temp01">
+                                                <label for="group_temp01" class="input_chk_label">비밀글 설정 시 체크하세요.</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="table_note_bottom">※ 개별 데이터에 대한 문의에 해당되어 각 기관담당자에게 해당 문의 건이 이관된 경우에는, 기관 담당자 답변까지 최대 10일 정도 소요될 수 있습니다.</p>
+                    </div>
+
+                    <!-- wrap_btns -->
+                    <div class="wrap_btns">
+                        <a href="javascript:;" target="_self" class="btn_submit filled_gray">취소</a>
+                        <a href="javascript:;" target="_self" class="btn_submit filled_blue">저장</a>
+                    </div>
+                    <!-- wrap_btns end -->
+
+
+                </article>
+                <!-- 본문 end  -->
+            </section>
+            <!-- 본문 외부 영역 end-->
+        </main>
+        <!-- 전체 영역 end  -->
+
+        <footer id="footer" class="footer"></footer>
+
+    </div>
+
+    <script>
+        // 파일 첨부 multiple
+        $(document).ready(function() {
+
+            $("#attachedFile").change(function() {
+                var multiFiles = $("#attachedFile")[0].files;
+                // 첨부파일 갯수 표시
+                $(".attached_file_counter .attached_count").html(multiFiles.length);
+                // tr 존재 여부 체크
+                if ($(".wrap_file_viewer").length == false) {
+                    // tr 추가 시 th rowspan 변경
+                    $(".wrap_select_file th").attr("rowspan", 2);
+                    $(".wrap_select_file").after('<tr><td><div class="wrap_file_viewer"><div class="attached_file_viewer"><ul class="attached_file_list"></ul></div></div></td></tr>');
+                }
+
+                for (let i = 0; i < multiFiles.length; i++) {
+                    // 첨부파일 이름, 용량 표시 
+                    // console.log(multiFiles.length);
+                    $(".attached_file_list").append('<li class="attached_file_item"><a href="javascript:;" target="_self" class="attached_anchor"><span>' + multiFiles[i].name + '</span><span>(</span><span class="attached_size">' + multiFiles[i].size + '</span><span>kb)</span></a><button class="btn_attached_delete" aria-label="첨부파일 삭제" onclick="attachedDelete();"></button></li>');
+                }
+                event.target.value = "";
+
+            });
+        });
+
+        // 첨부 파일 삭제  
+        $(document).on("click", ".btn_attached_delete", function() {
+            $(this).parents(".attached_file_item").remove();
+            // tr 삭제
+            if ($(".attached_file_item").length == 0) {
+                $(".wrap_select_file th").attr("rowspan", 1); 
+                $(".wrap_file_viewer").detach();
+            }
+        });
+
+        // // 첨부파일 확장자 체크
+        // // if($("#attachedFile").val() != "") {
+        // // var ext = $("#attachedFile").val().split(".").pop().toLowerCase();
+        // // if($.inArray(ext, ["jpg", "jpeg", "png", "gif", "bmp", "pdf"]) == -1) {
+        // // alert("첨부파일은 이미지 파일만 등록 가능합니다.");
+        // // $("#file").val("");
+        // // return false;
+        // // }
+        // // }
+
+        // // 첨부파일 용량 체크 (Mb 변환)
+        // if($("#attachedFile").val() != ""){
+        // var maxSize = 10 * 1024 * 1024; // 10MB
+        // var fileSize = $("#attachedFile")[0].files[0].size;
+        // if(fileSize > maxSize){
+        // alert("첨부파일 사이즈는 10MB 이내로 등록 가능합니다.");
+        // $("#attachedFile").val("");
+        // return false;
+        // }
+        // }
+    </script>
+</body>
+
+</html>

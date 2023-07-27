@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>디지털서비스 개방</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fontset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+	<div id="wrapper" class="wrapper">
+		<header id="header" class="header"></header>
+
+		<!-- 브레드크럼 -->
+		<div class="wrap_breadcrumb">
+			<ol class="breadcrumb">
+				<li class="cat_home"><a href="00메인.html" class="home" title="메인화면으로 이동"></a></li>
+				<li class="cat_depth01">
+					<a href="javascript:;" class="cat_title cat_depth01_title current">소개</a>
+					<ul class="cat_sub_menu">
+						<li class="cat_sub_item"><a href="01소개_01디지털서비스 개방 소개.html" target="_self" class="cat_sub_anchor">소개</a></li>
+						<li class="cat_sub_item"><a href="02서비스_01SRT승차권 예약.html" target="_self" class="cat_sub_anchor">서비스</a></li>
+						<li class="cat_sub_item"><a href="03API_01표준 API.html" target="_self" class="cat_sub_anchor">API</a></li>
+						<li class="cat_sub_item"><a href="04고객센터_01공지사항.html" target="_self" class="cat_sub_anchor">고객센터</a></li>
+						<li class="cat_sub_item"><a href="로그인,회원가입,마이페이지_03마이페이지.html" target="_self" class="cat_sub_anchor">마이페이지</a></li>
+					</ul>
+				</li>
+				<li class="cat_depth02">
+					<a href="javascript:;" class="cat_title cat_depth02_title current">이용안내 및 절차</a>
+					<ul class="cat_sub_menu">
+						<li class="cat_sub_item"><a href="01소개_01디지털서비스 개방 소개.html" target="_self" class="cat_sub_anchor">디지털서비스 개방이란?</a></li>
+						<li class="cat_sub_item"><a href="01소개_02이용 안내 및 절차.html" target="_self" class="cat_sub_anchor">이용 안내 및 절차</a></li>
+						<li class="cat_sub_item"><a href="01소개_03적용사례.html" target="_self" class="cat_sub_anchor">적용 사례</a></li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+		
+		<!-- 카테고리 타이틀 -->
+		<section class="section_title introduce">
+			<h2>소개</h2>
+		</section>
+
+		<!-- 메인  -->
+		<main class="main">
+
+			<!-- 좌측 사이드 메뉴 -->
+			<aside id="sidemenu" class="aside">
+				<div class="inner_aside">
+					<h3 class="side_title">소개</h3>
+					<nav class="aside_lnb">
+						<h2 class="sr_only">서브메뉴</h2>
+						<div class="depth depth01">
+							<ul class="depth_list depth01_list">
+								<li class="depth01_item"><a href="01소개_01디지털서비스 개방 소개.html" target="_self" class="depth_text depth01_text">디지털서비스 개방이란?</a></li>
+								<li class="depth01_item"><a href="01소개_02이용 안내 및 절차.html" target="_self" class="depth_text depth01_text currently">이용 안내 및 절차</a></li>
+								<li class="depth01_item"><a href="01소개_03적용사례.html" target="_self" class="depth_text depth01_text">적용 사례</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</aside>
+
+			<!-- 본문 외부 영역 -->
+			<section id="content" class="section introduce">
+				<!-- 본문 -->
+				<article class="page page_introduce02">
+
+					<h2 class="page_title">이용 안내 및 절차</h2>
+					
+					<div class="page_content">						
+						<div class="box_type_img">
+							<h3>디지털서비스 개방사업 수행절차</h3>
+							<p>디지털서비스 개방사업은 수요기관(민간채널), 운영기관(개방플랫폼), 개방기관(공공서비스)간에 아래와 같은 절차에 따라 진행됩니다.	</p>								
+							<img class="process_img pc_img" src="../../public/img/introduce/process01.png" alt="디지털서비스 개방사업의 수행 절차 안내입니다.
+							1.수요조사 제출
+							2.서비스 이용신청(신청서, 서비스 이용 계획서 공모)
+							3.수요기관 의견 
+							4.심의 결과 통보 
+							5.서비스 이용약관(또는 서비스 협약서)체결 
+							6.플랫폼 이용약관 동의, 제출
+							7.플랫폼 포털이용 신청 
+							신청서(기관정보 및 담당자 정보) 제출
+							8.연계서버 등록 신청
+							신청서(연계서버 및 서버 관리자 정보) 제출
+							9.회원등록 
+							10.API 이용(접속 토큰)신청 
+							11.임시KEY 발급
+							12.임시KEY(접속토큰)을 이용해서 API KEY 발급 요청
+							13.API KEY 발급
+							의 순서로 진행 됩니다.
+							1~8번까지는 공문작성, 문건발송등의 OFF 라인방식이고, 9번에서 13번까지는 포털화면의 기능으로 일이 이루어지는 온라인 방식입니다.">
+							<img class="process_img mo_img" src="../../public/img/introduce/m_process01.png" alt="디지털서비스 개방사업의 수행 절차 안내입니다.
+							1.수요조사 제출
+							2.서비스 이용신청(신청서, 서비스 이용 계획서 공모)
+							3.수요기관 의견 
+							4.심의 결과 통보 
+							5.서비스 이용약관(또는 서비스 협약서)체결 
+							6.플랫폼 이용약관 동의, 제출
+							7.플랫폼 포털이용 신청 
+							신청서(기관정보 및 담당자 정보) 제출
+							8.연계서버 등록 신청
+							신청서(연계서버 및 서버 관리자 정보) 제출
+							9.회원등록 
+							10.API 이용(접속 토큰)신청 
+							11.임시KEY 발급
+							12.임시KEY(접속토큰)을 이용해서 API KEY 발급 요청
+							13.API KEY 발급
+							의 순서로 진행 됩니다.				
+							1~8번까지는 공문작성, 문건발송등의 OFF 라인방식이고, 9번에서 13번까지는 포털화면의 기능으로 일이 이루어지는 온라인 방식입니다.">
+						</div>
+						<div class="box_type_img">
+							<h3>API 이용 신청을 하시려면?</h3>
+							<p class="process_text">앞선 과정을 통해 오프라인 협약, 온라인 회원등록 과정을 모두 거치신 후 온라인 상에서 API 이용 신청을 하실 때 필요한 과정입니다. 이 과정은 디지털서비스 개방 ‘관리 메뉴’에 로그인을 하신 상태에서 이용하실 수 있습니다.	</p>
+							<ul class="process_num">
+								<li> 1. 디지털서비스개방 업무메뉴의 '서비스 관리 - API 이용신청 관리'탭에서 API 서비스 이용을 신청 할 수 있습니다. </li>
+								<li class="colored_blue">(API 이용 신청은 관리 메뉴에 로그인한 상태에서 할 수 있습니다.)</li>
+							</ul>							
+							<img  class="process_exam pc_img" src="../../public/img/introduce/process02.png" alt="API 서비스를 이용 신청하는 과정의 안내입니다. 로그인 이후 관리 메뉴에 접근한 다음 업무메뉴의 '서비스 관리 - API 이용신청 관리'탭에서 API 서비스 이용을 신청 할 수 있습니다.">
+							<img  class="process_exam mo_img" src="../../public/img/introduce/m_process02.png" alt="API 서비스를 이용 신청하는 과정의 안내입니다. 로그인 이후 관리 메뉴에 접근한 다음 업무메뉴의 '서비스 관리 - API 이용신청 관리'탭에서 API 서비스 이용을 신청 할 수 있습니다.">
+							<ul class="process_num">
+								<li>2. 'API 이용신청 등록'을 통해 간단한 정보를 작성한 후 등록 버튼을 눌러 원하는 서비스를 신청합니다.</li>							
+							</ul>
+							<img class="process_exam pc_img" src="../../public/img/introduce/process03.png" alt="API 이용신청 등록하는 과정의 안내입니다. 'API 이용신청 등록'을 통해 간단한 정보를 작성한 후 하단의 등록 버튼을 눌러 원하는 서비스를 신청합니다.">
+							<img class="process_exam mo_img" src="../../public/img/introduce/m_process03.png" alt="API 이용신청 등록하는 과정의 안내입니다. 'API 이용신청 등록'을 통해 간단한 정보를 작성한 후 하단의 등록 버튼을 눌러 원하는 서비스를 신청합니다.">
+							<ul class="process_num">
+								<li>3. 신청 내역이 운영기관 담당자의 승인을 받으면 API 이용 신청이 완료되고, 임시 KEY가 발급됩니다.</li> 
+								<li class="colored_blue">(발급된 임시 KEY는 관리 메뉴의 '서비스 관리 - API 이용신청 관리'에서 확인하실 수 있으며, 신청자의 이메일로도 전송됩니다.)</li>
+							</ul>					 
+							<img class="process_exam pc_img" src="../../public/img/introduce/process04.png" alt="API 이용신청 등록 이후 과정의 안내입니다. 신청 내역이 운영기관 담당자의 승인 후 임시 KEY가 발급되며 발급된 임시 KEY는 관리 메뉴의 '서비스 관리 - API 이용신청 관리'에서 확인하실 수 있으며, 신청자의 이메일로도 전송됩니다.">
+							<img class="process_exam mo_img" src="../../public/img/introduce/m_process04.png" alt="API 이용신청 등록 이후 과정의 안내입니다. 신청 내역이 운영기관 담당자의 승인 후 임시 KEY가 발급되며 발급된 임시 KEY는 관리 메뉴의 '서비스 관리 - API 이용신청 관리'에서 확인하실 수 있으며, 신청자의 이메일로도 전송됩니다.">
+						</div>
+						<div class="box_type_img">
+							<h3>임시 KEY를 확인하시려면?</h3>
+							<p>API 이용신청이 승인되면 개방기관 서비스 별로 임시 KEY가 발급됩니다. 관리자 포털의 '서비스 관리 - API 이용신청 관리' 메뉴의 상세 페이지에서 확인이 가능하며, 신청자의 이메일에서도 확인 가능합니다.</p>								
+							<img class="process_exam pc_img" src="../../public/img/introduce/process05.png" alt="임시 KEY 확인하는 방법의 안내입니다. API 이용신청이 승인되면 개방기관 서비스 별로 임시 KEY가 발급됩니다. 관리자 포털의 '서비스 관리 - API 이용신청 관리' 메뉴의 상세 페이지에서 확인이 가능하며, 신청자의 이메일에서도 확인 가능합니다." >
+							<img class="process_exam mo_img" src="../../public/img/introduce/m_process05.png" alt="임시 KEY 확인하는 방법의 안내입니다. API 이용신청이 승인되면 개방기관 서비스 별로 임시 KEY가 발급됩니다. 관리자 포털의 '서비스 관리 - API 이용신청 관리' 메뉴의 상세 페이지에서 확인이 가능하며, 신청자의 이메일에서도 확인 가능합니다." >
+						</div>
+					</div>
+
+
+				</article>
+				<!-- 본문 end  -->
+			</section>
+			<!-- 본문 외부 영역 end-->
+		</main>
+		<!-- 전체 영역 end  -->
+
+		<footer id="footer" class="footer"></footer>
+
+	</div>
+
+</body>
+
+</html>

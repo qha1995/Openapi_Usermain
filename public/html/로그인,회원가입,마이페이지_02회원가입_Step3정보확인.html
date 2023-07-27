@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>디지털서비스 개방</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fontset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper">
+        <header id="header" class="header"></header>
+
+            <!-- 본문 외부 영역 -->
+            <section id="content" class="section join">
+                <!-- <h2 class="section_title sr_only">로그인</h2> -->
+                <!-- 본문  -->
+                <article class="page page_join_check">
+                    <!-- 페이지 제목 -->
+                    <h2 class="page_title">회원등록</h2>
+                    <div class="page_content">
+                        <div class="box_progressbar">
+                            <ul class="progressbar_list">
+                                <li class="progressbar_item step_01"><p>STEP 01<br>본인인증</p></li>
+                                <li class="progressbar_item step_02"><p>STEP 02<br>약관동의</p></li>
+                                <li class="progressbar_item step_03 on"><p>STEP 03<br>정보확인</p></li>
+                                <li class="progressbar_item step_04"><p>STEP 04<br>등록완료</p></li>
+                            </ul>
+                        </div>
+                        <div class="page_sub_title">
+                            <h3>회원정보 확인 및 부가 정보 등록</h3>
+                        </div>
+
+                        <fieldset>
+                            <legend class="sr_only">회원정보 확인</legend>
+                            <div class="box_input">
+                                <label for="">소속</label>
+                                <input type="text" placeholder="소속을 입력해주세요." value="NAVER" readonly disabled>
+                            </div>
+                            <div class="box_input">
+                                <label for="">부서 명</label>
+                                <input type="text" placeholder="부서 명을 입력해주세요." value="디지털서비스 개방">
+                            </div>
+                            <div class="box_input">
+                                <label for="">사용자 명</label>
+                                <input type="text" placeholder="사용자 명을 입력해주세요." value="김지수" readonly disabled>
+                            </div>
+                            <div class="box_input box_email">
+                                <label for="" class="asterisk">이메일</label>
+                                <div class="box_c">
+                                    <div class="box_r">
+                                        <input type="text" placeholder="" value="im00">
+                                        <div class="atsign">@</div>
+                                        <input type="text" placeholder="" value="naver.com">
+                                    </div>
+                                        <select>
+                                            <option value="">naver.com</option>
+                                            <option value="">navernavernavernaver.com</option>
+                                            <option value="">naver.com</option>
+                                        </select>
+                                </div>
+                                <div class="msg_err">형식이 올바르지 않습니다. 다시 입력해 주세요.</div>
+                            </div>
+                            <div class="box_input box_tel">
+                                <label for="" class="asterisk">휴대전화</label>
+                                <div class="box_c">
+                                    <input type="tel" id="" name="" placeholder="휴대전화 번호를 입력하세요" value="" maxlength="13">
+                                    <span>(’-’를 제외하고 숫자만 입력해 주세요.)</span>
+                                </div>
+                                <div class="msg_err">휴대전화 번호를 입력해 주세요.</div>
+                            </div>
+                            <div class="box_input box_tel">
+                                <label for="" class="">사무실 전화</label>
+                                <div class="box_c">
+                                    <input type="tel" id="" name="" placeholder="사무실 전화 번호를 입력하세요" value="01024121234" maxlength="13">
+                                    <span>(’-’를 제외하고 숫자만 입력해 주세요.)</span>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <p class="msg_guide">※ 상단에 입력된 회원정보가 옳으면 ‘저장’ 버튼을 눌러 회원등록 절차를 완료하세요.<br> 기재된 내용이 사실과 다를 경우, 회원정보를 수정하신 후에 회원등록 절차를 완료해 주세요. </p>
+
+                        <!-- 하단 버튼 영역 -->
+                        <div class="wrap_btns">
+                            <a href="javascript:;" target="_self" class="btn_submit filled_gray">취소</a>
+                            <a href="javascript:;" target="_self" class="btn_submit filled_blue">저장</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!-- 본문 외부 영역 end  -->
+
+        <footer id="footer" class="footer"></footer>
+    </div>
+    <!-- wrapper end -->
+</body>
+
+</html>

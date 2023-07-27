@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>디지털서비스 개방</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="../css/swiper-5.4.3.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fontset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/swiper-5.4.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../js/aos-2.3.1/dist/aos.js" defer></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+</head> 
+
+<body>
+    <div id="wrapper" class="wrapper">
+        <header id="header" class="header"></header>
+
+        <!-- 브레드크럼 -->
+        <div class="wrap_breadcrumb">
+            <ol class="breadcrumb">
+                <li class="cat_home"><a href="00메인.html" class="home" title="메인화면으로 이동"></a></li>
+                <li class="cat_depth01">
+                    <a href="javascript:;" class="cat_title cat_depth01_title current">서비스</a>
+					<ul class="cat_sub_menu">
+						<li class="cat_sub_item"><a href="01소개_01디지털서비스 개방 소개.html" target="_self" class="cat_sub_anchor">소개</a></li>
+						<li class="cat_sub_item"><a href="02서비스_01SRT승차권 예약.html" target="_self" class="cat_sub_anchor">서비스</a></li>
+						<li class="cat_sub_item"><a href="03API_01표준 API.html" target="_self" class="cat_sub_anchor">API</a></li>
+						<li class="cat_sub_item"><a href="04고객센터_01공지사항.html" target="_self" class="cat_sub_anchor">고객센터</a></li>
+						<li class="cat_sub_item"><a href="로그인,회원가입,마이페이지_03마이페이지.html" target="_self" class="cat_sub_anchor">마이페이지</a></li>
+					</ul>
+                </li>
+                <li class="cat_depth02">
+                    <a href="javascript:;" class="cat_title cat_depth02_title current">자동차검사 예약</a>
+                    <ul class="cat_sub_menu">
+                        <li class="cat_sub_item"><a href="02서비스_01SRT승차권 예약.html" target="_self" class="cat_sub_anchor">SRT 승차권 예약</a></li>
+                        <li class="cat_sub_item"><a href="02서비스_02자동차검사 예약.html" target="_self" class="cat_sub_anchor">자동차검사 예약</a></li>
+                        <li class="cat_sub_item"><a href="02서비스_03휴양림 예약.html" target="_self" class="cat_sub_anchor">휴양림 예약</a></li>
+                        <li class="cat_sub_item"><a href="02서비스_04국립수목원 예약.html" target="_self" class="cat_sub_anchor">국립수목원 예약</a></li>
+                        <li class="cat_sub_item"><a href="02서비스_05세종·백두대간수목원 예약.html" target="_self" class="cat_sub_anchor">세종·백두대간수목원 예약</a></li>
+                        <li class="cat_sub_item"><a href="02서비스_06공항 내 소요시간 안내(Home to Airport).html" target="_self" class="cat_sub_anchor">공항 내 소요시간 안내(Home to Airport)</a></li>
+                        <li class="cat_sub_item"><a href="02서비스_07문화누리카드 발급신청 및 이용내역 조회.html" target="_self" class="cat_sub_anchor">문화누리카드 발급신청 및 이용내역 조회</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- 카테고리 타이틀 -->
+        <section class="section_title service service02">
+            <div class="box">
+                <h4>서비스</h4>
+                <h2>자동차검사 예약</h2>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- 메인  -->
+            <main class="main">
+
+                <!-- 좌측 사이드 메뉴 -->
+                <aside id="sidemenu" class="aside">
+                    <div class="inner_aside">
+                        <h3 class="side_title">서비스</h3>
+                        <nav class="aside_lnb">
+                            <h2 class="sr_only">서브메뉴</h2>
+                            <div class="depth depth01">
+                                <ul class="depth_list depth01_list">
+                                    <li class="depth01_item"><a href="02서비스_01SRT승차권 예약.html" target="_self" class="depth_text depth01_text">SRT 승차권 예약</a></li>
+                                    <li class="depth01_item"><a href="02서비스_02자동차검사 예약.html" target="_self" class="depth_text depth01_text currently">자동차검사 예약</a></li>
+                                    <li class="depth01_item"><a href="02서비스_03휴양림 예약.html" target="_self" class="depth_text depth01_text">휴양림 예약</a></li>
+                                    <li class="depth01_item"><a href="02서비스_04국립수목원 예약.html" target="_self" class="depth_text depth01_text">국립수목원 예약</a></li>
+                                    <li class="depth01_item"><a href="02서비스_05세종·백두대간수목원 예약.html" target="_self" class="depth_text depth01_text">세종·백두대간수목원 예약</a></li>
+                                    <li class="depth01_item"><a href="02서비스_06공항 내 소요시간 안내(Home to Airport).html" target="_self" class="depth_text depth01_text">공항 내 소요시간 안내(Home to Airport)</a></li>
+                                    <li class="depth01_item"><a href="02서비스_07문화누리카드 발급신청 및 이용내역 조회.html" target="_self" class="depth_text depth01_text">문화누리카드 발급신청 및 이용내역 조회</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!-- 본문 외부 영역 -->
+                <section id="content" class="section service">
+                    <!-- <h2 class="section_title sr_only">제목</h2> -->
+                    <!-- 본문 -->
+                    <article class="page page_service service02">
+                        <div class="wrap_page_title_quot"  data-aos="fade-up">
+                            <h2 class="page_title_quot">마냥 기다리기만 하던<br class="only_mob"> 자동차검사는 이제 그만!<br />스마트폰으로 언제 어디서든 간편하게</h2>
+                        </div>
+
+                        <div class="page_content">
+
+                            <div class="infor" data-aos="fade-up" data-aos-delay="100">
+                                <div class="intro">
+                                    <div class="box">
+                                        <h3>자동차검사 예약</h3>
+                                        <span>마냥 기다리기만 하던 자동차검사는 이제 그만!<br> 스마트폰으로 언제 어디서든 간편하게</span>
+                                        <p>한국교통안전공단 자동차검사소는 2020년부터 사이버 검사소 누리집(https://www.cyberts.kr)에서 온라인 예약을 시행해왔습니다. 자동차검사는 운행중인 자동차의 안전도 적합여부를 판별하여 교통사고 예방에 기여하고, 소음 및 배출가스로부터 환경오염을 예방합니다. 또한 자동차의 동일성 확인을 통해 국민의 재산권을 보호하고, 책임보험 가입여부 확인 및 불법 튜닝 여부를 확인하여 주행 질서 확립에 기여합니다.</p>
+                                    </div>
+                                </div>
+                                <div class="pic">
+                                    <figure>
+                                        <img src="../../public/img/service/img04_2.jpg" alt="자동차를 정비하는 수리공 사진">
+                                        <p>자동차검사는 운행중인 자동차의 안전도 적합여부 및 배출가스 허용기준 준수 여부 등을 확인하여 교통사고와 환경오염으로부터 국민의 귀중한 생명과 재산을 지키는 중요한 사업입니다. 자동차검사는 운행중인 자동차의 안전도 적합여부 및 배출가스 허용기준 준수 여부 등을 확인하여 교통사고와 환경오염으로부터 국민의 귀중한 생명과 재산을 지키는 중요한 사업입니다.</p>
+                                    </figure>
+                                    <figure>
+                                        <img src="../../public/img/service/img04_3.jpg" alt="자동차 내부를 검사하는 사진">
+                                        <P>자동차 배출가스 검사는 연간 1만 4천여톤의 대기오염물질을 저감시키는, 맑고 안전한 생활환경을 위한 최소한의 노력으로써, 나뿐만이 아닌 다음 세대를 위한 약속입니다.</P>
+                                    </figure>
+                                    <figure>
+                                        <img src="../../public/img/service/img04_4.jpg" alt="온라인 자동차검사 예약중인 사진">
+                                        <p>온라인 자동차검사 예약을 통해 필요한 시기에 검사를 받을 수 있도록 지원합니다.</p>
+                                    </figure>
+                                </div>
+                            </div>
+                            <ul class="card_list">
+                                <li class="card_item" data-aos="fade-down" data-aos-delay="100">
+                                    <figure>
+                                        <div class="box">
+                                            <img src="../../public/img/icons/icon_banner07.png" alt="">
+                                            <h4>자동차검사 예약/결제</h4>
+                                            <p>국민들이 일상적으로 이용하는<br class="only_wide"> 앱을 통해 빠르고 간편하게<br class="only_wide"> 자동차검사 예약 및 결제가 가능합니다.</p>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="card_item" data-aos="fade-down" data-aos-delay="250">
+                                    <figure>
+                                        <div class="box">
+                                            <img src="../../public/img/icons/icon_banner08.png" alt="">
+                                            <h4>예약 변경/취소</h4>
+                                            <p>간편하게 자동차검사 예약을<br> 변경하거나 취소할 수 있습니다.</p>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="card_item" data-aos="fade-down" data-aos-delay="400">
+                                    <figure>
+                                        <div class="box">
+                                            <img src="../../public/img/icons/icon_banner09.png" alt="">
+                                            <h4>문진표 등록 및 수정</h4>
+                                            <p>자동차검사 예약 시 필요한 문진표를<br> 작성 및 등록, 수정할 수 있습니다.</p>
+                                        </div>
+                                    </figure>
+                                </li>
+                            </ul>
+                            <div class="process" data-aos="fade-up" data-aos-delay="100">
+                                <h3>사용자 서비스 이용 프로세스</h3>
+                                <p>민간 채널을 통해 자동차검사 예약 서비스를 이용하는 사용자들은 다음과 같은 과정을 거치게 됩니다. 서비스를 이용하기 위해 개별적인 앱/웹을 설치해야 했던 기존의 방법에서 벗어나, 평소 친숙하게 사용하던 민간 앱을 이용해 프로세스를 시작하고 마무리할 수 있습니다.</p>
+                                <img src="../../public/img/service/process03.png" class="proimg only_wide" alt="자동차검사 예약 서비스를 이용하는 프로세스는 다음과 같습니다.
+                                1.	민간 플랫폼에 접속
+                                2.	자동차 정보 조회 및 자동차 검사 대상 여부 확인
+                                3.	검사 일자 선택
+                                4.	검사소, 검사 시간 선택 
+                                5.	사회적 약자 등 할인 요건 조회 및 선택
+                                6.	민간 플랫폼을 통한 결제 및 예약 완료">
+                                <img src="../../public/img/service/process03_m.png" class="proimg_m only_mob" alt="자동차검사 예약 서비스를 이용하는 프로세스는 다음과 같습니다.
+                                1.	민간 플랫폼에 접속
+                                2.	자동차 정보 조회 및 자동차 검사 대상 여부 확인
+                                3.	검사 일자 선택
+                                4.	검사소, 검사 시간 선택 
+                                5.	사회적 약자 등 할인 요건 조회 및 선택
+                                6.	민간 플랫폼을 통한 결제 및 예약 완료">
+                            </div>
+                            <article class="area_case">
+                                <h3>적용 사례</h3>
+                                <p>공공서비스를 적용한 사례를 소개하는 공간입니다.</p>
+                                <div class="slide_box">
+                                    <div class="swiper slide_case swiper-container">
+                                        <span class="sr_only">제공 중인 매체</span>
+                                        <ul class="case_list swiper-wrapper">
+                                            <li class="case_item swiper-slide">
+                                                <div class="img_box">
+                                                    <img class="logo_kb" src="../../public/img/introduce/logo_KB_bank.png" alt="KB국민은행 로고">
+                                                </div>
+                                                <div class="tag_box">
+                                                    <div class="service_form_tag_box">
+                                                        <span class="service_form_tag selected_tag">Web</span>
+                                                        <span class="service_form_tag selected_tag">IOS</span>
+                                                        <span class="service_form_tag selected_tag">Android</span>
+                                                    </div>
+                                                    <div class="service_platform_box">
+                                                        <h4 class="service_platform">KB 월렛(스타뱅킹)</h4>
+                                                        <p class="service_com">KB국민은행</p>
+                                                    </div>
+                                                    <div class="platform_intro_box">
+                                                        <p class="platform_intro">디지털지갑 형태의 생활밀착형 플랫폼</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="case_item swiper-slide">
+                                                <div class="img_box">
+                                                    <img class="logo_naver" src="../../public/img/introduce/logo_naver.svg" alt="네이버 로고">
+                                                </div>
+                                                <div class="tag_box">
+                                                    <div class="service_form_tag_box">
+                                                        <span class="service_form_tag selected_tag">Web</span>
+                                                        <span class="service_form_tag selected_tag">IOS</span>
+                                                        <span class="service_form_tag selected_tag">Android</span>
+                                                    </div>
+                                                    <div class="service_platform_box">
+                                                        <h4 class="service_platform">네이버 예약</h4>
+                                                        <p class="service_com">네이버 주식회사</p>
+                                                    </div>
+                                                    <div class="platform_intro_box">
+                                                        <p class="platform_intro">언제 어디서나, <br class="mobile_off"> 예약은 네이버 예약 </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="case_item swiper-slide">
+                                                <div class="img_box">
+                                                    <img class="logo_toss" src="../../public/img/introduce/logo_toss.png" alt="토스 로고">
+                                                </div>
+                                                <div class="tag_box">
+                                                    <div class="service_form_tag_box">
+                                                        <span class="service_form_tag selected_tag">Web</span>
+                                                        <span class="service_form_tag selected_tag">IOS</span>
+                                                        <span class="service_form_tag selected_tag">Android</span>
+                                                    </div>
+                                                    <div class="service_platform_box">
+                                                        <h4 class="service_platform">토스 페이</h4>
+                                                        <p class="service_com">비바리퍼블리카</p>
+                                                    </div>
+                                                    <div class="platform_intro_box">
+                                                        <p class="platform_intro">결제의 시작과 끝, <br class="mobile_off"> 모든 순간이 간편해지다 </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="case_item swiper-slide">
+                                                <div class="img_box">
+                                                    <img class="logo_sh" src="../../public/img/introduce/logo_shinhan_card.png" alt="신한카드 로고">
+                                                </div>
+                                                <div class="tag_box">
+                                                    <div class="service_form_tag_box">
+                                                        <span class="service_form_tag selected_tag">Web</span>
+                                                        <span class="service_form_tag selected_tag">IOS</span>
+                                                        <span class="service_form_tag selected_tag">Android</span>
+                                                    </div>
+                                                    <div class="service_platform_box">
+                                                        <h4 class="service_platform">마이카</h4>
+                                                        <p class="service_com">신한카드</p>
+                                                    </div>
+                                                    <div class="platform_intro_box">
+                                                        <p class="platform_intro">자동차가 필요할 땐 My Car <br class="mobile_off"><br class="mobile_off"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="case_item swiper-slide">
+                                                <div class="img_box">
+                                                    <img class="logo_kakao" src="../../public/img/introduce/logo_kakao_mobi.png" alt="카카오모빌리티 로고">
+                                                </div>
+                                                <div class="tag_box">
+                                                    <div class="service_form_tag_box">
+                                                        <span class="service_form_tag selected_tag">Web</span>
+                                                        <span class="service_form_tag selected_tag">IOS</span>
+                                                        <span class="service_form_tag selected_tag">Android</span>
+                                                    </div>
+                                                    <div class="service_platform_box">
+                                                        <h4 class="service_platform">카카오 T</h4>
+                                                        <p class="service_com">카카오모빌리티</p>
+                                                    </div>
+                                                    <div class="platform_intro_box">
+                                                        <p class="platform_intro">모든 이동을 위한 카카오T <br class="mobile_off"><br class="mobile_off"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="case_item swiper-slide">
+                                                <div class="img_box">
+                                                    <img class="logo_kakao" src="../../public/img/introduce/logo_kakao_mobi.png" alt="카카오모빌리티 로고">
+                                                </div>
+                                                <div class="tag_box">
+                                                    <div class="service_form_tag_box">
+                                                        <span class="service_form_tag selected_tag">Web</span>
+                                                        <span class="service_form_tag selected_tag">IOS</span>
+                                                        <span class="service_form_tag selected_tag">Android</span>
+                                                    </div>
+                                                    <div class="service_platform_box">
+                                                        <h4 class="service_platform">카카오내비</h4>
+                                                        <p class="service_com">카카오모빌리티</p>
+                                                    </div>
+                                                    <div class="platform_intro_box">
+                                                        <p class="platform_intro">정확하고 즐거운 운전 도우미 <br class="mobile_off"><br class="mobile_off"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="wrap-slide-box">
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </article>
+                            <div class="cs" data-aos="fade-up">
+                                <h3>문의</h3>
+                                <div class="box">
+                                    <!-- <figure>
+                                        <img src="../../public/img/icons/cs_01.png" alt="">
+                                        <span>전화문의</span>
+                                        <div class="num">01-1234-5678</div>
+                                    </figure> -->
+                                    <figure>
+                                        <img src="../../public/img/icons/cs_02.png" alt="">
+                                        <span>메일문의</span>
+                                        <div class="num">dso_help@nia.or.kr</div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- 본문 end  -->
+                </section>
+                <!-- 본문 외부 영역 end-->
+                
+            </main>
+        </div>
+        <!-- 전체 영역 end  -->
+
+        <footer id="footer" class="footer"></footer>
+
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            AOS.init();
+
+            var swiper = new Swiper(".slide_case", {
+                roundLengths: 'false',
+                slidesPerView : 'auto', 
+                spaceBetween: 15,
+                autoHeight : true, 
+                slidesOffsetAfter: 100, // 오른쪽 공백 
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    prevEl: '.wrap-slide-box .swiper-button-prev',
+                    nextEl: '.wrap-slide-box .swiper-button-next',
+                },
+                // 웹접근성  추가
+                // Enable keyboard navigation
+                keyboard: {
+                    enabled: true,
+                },
+                // Enable ARIA support
+                a11y: {
+                    prevSlideMessage: '이전 슬라이드',
+                    nextSlideMessage: '다음 슬라이드',
+                    firstSlideMessage: '처음 슬라이드',
+                    lastSlideMessage: '마지막 슬라이드',
+                    paginationBulletMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+                },
+
+                breakpoints: {
+                    768: {
+                        width: 768,
+                        spaceBetween: 15,
+                    },
+                    1024: {
+                        width: 1024,
+                        spaceBetween: 20,
+                    },
+                    1366: {
+                        width: 1366,
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                    enabled: true,
+                },
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
